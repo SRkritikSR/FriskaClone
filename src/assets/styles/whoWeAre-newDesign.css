@@ -1,0 +1,154 @@
+.whoWeAre-theme {
+    background: rgb(2, 175, 200);
+}
+
+.bufferCardBg {
+    background: rgb(21, 186, 208);
+}
+
+.bufferCardTextColor {
+    color: rgb(21, 186, 208) !important;
+}
+
+.bufferBubbles {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(21, 186, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#whoWeAre-doc1, #whoWeAre-doc2, #whoWeAre-doc3 {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width:768px) {
+    #whoWeAre-container {
+        height: 80vh;
+        max-width: 100%;
+    }
+
+    #whoWeAre-heading {
+        position: absolute;
+        top: 100px;
+    }
+
+    #whoWeAre-content {
+        margin-right: -100px;
+        position: absolute;
+        width: 60%;
+        background: rgb(2, 175, 200);
+    }
+
+    #whatWeProvide-container-1 {
+        max-width: 100% !important;
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+        height: 45vh;
+    }
+
+    #whoWeAre-mobilePic {
+        width: fit-content;
+        margin-right: -50px;
+        margin-bottom: -100px;
+    }
+
+    #whoWeAre-doc1 {
+        position: absolute;
+        margin-top: -40px;
+    }
+
+    #whoWeAre-doc2 {
+        position: absolute;
+        right: 40px;
+    }
+
+    #whoWeAre-doc3 {
+        position: absolute;
+        margin-top: 40px;
+    }
+    .borderedBufferCards{
+        border-radius: 30px !important;
+    }
+    .leftBorderedBufferImg{
+        border-radius: 30px 0px 0px 30px !important;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    #whoWeAre-container>div>div {
+        text-align: center !important;
+        flex-direction: column !important;
+        padding: 0px;
+    }
+
+    #whoWeAre-heading {
+        padding: 0px !important;
+    }
+
+    #whoWeAre-content {
+        background: rgb(2, 175, 200) !important;
+    }
+
+    #whoWeAre-content>h4 {
+        /* font-size: px !important; */
+        line-height: 30px;
+    }
+
+    #whatWeProvide-1-content>h3 {
+        width: 100% !important;
+        font-size: 15px !important;
+        line-height: 25px;
+    }
+
+    #whatWeProvide-1-content {
+        flex-direction: column !important;
+    }
+
+    #whoWeAre-mobilePic {
+        margin-bottom: 35px;
+        max-width: 100% !important;
+    }
+
+    #whatWeProvide-container-1 {
+        max-width: 100% !important;
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+        /* height: 45vh; */
+    }
+
+    #whoWeAre-doc2 {
+        display: none;
+    }
+
+    #whoWeAre-doc3 {
+        display: none;
+    }
+
+    .bufferBubbles{
+        width: 100px ;
+        height: 100px ;
+        text-align: center !important;
+        font-size: small;
+        margin-bottom: 10px;
+    }
+    .promoCodes h5{
+        font-size: small !important;
+    }
+}
+
+
+
+@media screen and (max-width:767px) and (min-width:449px) {
+
+    #whatWeProvide-1-content>h3 {
+        width: 100% !important;
+        font-size: 20px !important;
+        line-height: 30px;
+    }
+}
