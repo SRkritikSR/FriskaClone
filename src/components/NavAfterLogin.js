@@ -36,12 +36,13 @@ export const NavAfterLogin = (props) => {
               </li>
               {isDoctor===true ?
               <>
-                <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/book-doctor-side">Create Slots</Link>
+              <li className="nav-item ms-2 mx-lg-3">
+                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Calender</Link>
                 </li>
                 <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Book For Patients</Link>
+                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/book-doctor-side">Manage Slots</Link>
                 </li>
+                
                 <li className="nav-item ms-2 mx-lg-3">
                   <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/patient-queue">Appointment Queue</Link>
                 </li>

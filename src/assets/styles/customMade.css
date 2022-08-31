@@ -6,7 +6,9 @@
   /* background: linear-gradient(180deg, #028AD2 0%, #0070AC 100%); */
   background: #15343c;
 }
-
+.su_but{
+  margin-right: 20px;
+}
 .darkerWebsiteColor {
   background-color: #40B2C1 !important;
 }
@@ -396,7 +398,7 @@ html, body {
   .thickBorder {
     border: 20px solid #40B2C1 !important
   }
-
+  
   #carouselExampleIndicators {
     padding-top: 0px !important;
   }

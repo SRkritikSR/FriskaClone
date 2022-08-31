@@ -278,7 +278,7 @@ export const AppointmentEditor = () => {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>}
-      <h2 className="ms-5 ps-3 pt-3">Appointments</h2>
+      <h2 className="ms-5 ps-3 pt-3">Book For Patients</h2>
       <div className='container p-0 mt-4'>
           <Box sx={{ width: '100%', bgcolor: 'primary.dark' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >

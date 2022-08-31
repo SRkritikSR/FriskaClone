@@ -36,10 +36,10 @@ export const NavBeforeLogin = () => {
                 <Button variant='contained' className="mx-2 fw-bold" style={{ fontSize: '2vh'}}>
                     <PersonIcon className='me-1'/> Login</Button>
               </Link>
-              <Link to="/signup">
+              <Link to="/signup" className="su_but">
                 {/* <button type="button"
                   className="btn btn-outline-secondary mx-2 fw-bold rounded" style={{ fontSize: '2.3vh',fontFamily:'sans-serif' }}>SignUp</button> */}
-                <Button variant="contained" className="mx-2 fw-bold" style={{ fontSize: '2vh'}}>Sign Up</Button>
+                <Button variant="contained" className="mx-2 fw-bold " style={{ fontSize: '2vh'} } >Sign Up</Button>
               </Link>
             </form>
           </div>

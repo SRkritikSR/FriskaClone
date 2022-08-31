@@ -141,7 +141,7 @@ export default function Dashboard() {
 						</div>
 					</div>
 				</div>
-			</> : <>
+			\</> : <>
 				<div className='container bookAppointment-card'>
 					<div className='row'>
 						<div className='col-8 col-sm-6 d-flex'>
@@ -219,8 +219,8 @@ export default function Dashboard() {
 								<span>Certified Doctors</span>
 							</div>
 							<div className='rounded mt-md-4 offset-md-1 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
-								<span className='siteGrowth-infoCards-data'>2</span>
-								<span>Cities</span>
+								<span className='siteGrowth-infoCards-data'>Pune</span>
+								<span>City</span>
 							</div>
 							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
 								<span className='siteGrowth-infoCards-data'>1500+</span>
