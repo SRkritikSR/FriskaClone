@@ -94,7 +94,7 @@ export default function Dashboard() {
 					<div className="jumbotron col-6 p-4 my-auto">
 						<h1 className="display-5 fw-bold text-white" style={{ fontSize: '4.7vh' }}>Create Appoinments</h1>
 						<p className="lead text-white pt-2" style={{ fontSize: '2.5vh' }}><br className='desktopBreak'></br>
-							Make appointments slots with ease<br className='desktopBreak'></br>
+							ts slots with ease<br className='desktopBreak'></br>
 							Edit and delete slots as per requirement<br className='desktopBreak'></br>
 						</p>
 						<hr style={{ marginTop: '1vw', marginBottom:'1vw' }}></hr>

@@ -105,8 +105,8 @@ export default function Dashboard() {
 							<img src={bookAppointmentCardPic} className='bookAppointmentCard-image w-100'></img>
 						</div>
 						<div className='col-4 col-sm-6 d-flex flex-column justify-content-evenly bookAppointment-contentCol'>
-							<span className='dashboard-card-headline mb-5`'>Make Appointment Slots</span>
-							<span className='dashboard-card-content'>No more standing in queues, sitting in the waiting area. Skip the hassle and get your health checked up quickly with live tracking system.</span>
+							<span className='dashboard-card-headline mb-5`'>Calendar</span>
+							<span className='dashboard-card-content'>Manage your day to day schedule here without making separate calendars for offline and online appointments.</span>
 							<Link to="book-doctor-side">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Create Slots</button>
 							</Link>
@@ -116,8 +116,8 @@ export default function Dashboard() {
 				<div className='container bookAppointment-card uploadDocument-card'>
 					<div className='row'>
 						<div className='col-4 col-sm-6 col-md-4 offset-md-1 d-flex flex-column justify-content-evenly uploadDocument-contentCol'>
-							<span className='dashboard-card-headline'>Book Appointment For Patients</span>
-							<span className='dashboard-card-content'>Save your medical records securely, so that you never misplace them again.Get 5GB of storage for free.</span>
+							<span className='dashboard-card-headline'>Manage Slots</span>
+							<span className='dashboard-card-content'>SCreate and manage your everyday time to check up patients simply by a click. Skip the hassle and get your schedule ready for your patients.</span>
 							<Link to="appointment-editor">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Book Appointment</button>
 							</Link>
@@ -130,8 +130,8 @@ export default function Dashboard() {
 				<div className='container bookAppointment-card uploadDocument-card'>
 					<div className='row'>
 						<div className='col-4 col-sm-6 col-md-4 offset-md-1 d-flex flex-column justify-content-evenly uploadDocument-contentCol'>
-							<span className='dashboard-card-headline'>Patient Queue</span>
-							<span className='dashboard-card-content'>Save your medical records securely, so that you never misplace them again.Get 5GB of storage for free.</span>
+							<span className='dashboard-card-headline'>Appointment Queue</span>
+							<span className='dashboard-card-content'>Manage your real time patients for the day both offline and online on a single platform. Delay the appointments or swap the order of patients easily.</span>
 							<Link to="patient-queue">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Patient Queue</button>
 							</Link>

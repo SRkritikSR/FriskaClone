@@ -37,7 +37,7 @@ export const NavAfterLogin = (props) => {
               {isDoctor===true ?
               <>
               <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Calender</Link>
+                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Calendar</Link>
                 </li>
                 <li className="nav-item ms-2 mx-lg-3">
                   <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/book-doctor-side">Manage Slots</Link>
@@ -54,7 +54,7 @@ export const NavAfterLogin = (props) => {
               </li> : <></>
             }
               <li className="nav-item ms-2 mx-lg-3">
-                <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/customer-support">Customer Support</Link>
+                <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/customer-support">Support</Link>
               </li>
             </ul>
             <form className="d-flex mb-3 ms-2 m-sm-0">

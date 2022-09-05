@@ -61,7 +61,7 @@ export default function CreateSlotsPage() {
                         id="date"
                         label="Choose Date"
                         type="date"
-                        defaultValue="2017-05-24"
+                        defaultValue={defaultValue}
                         // sx={{ width: 150 }}
                         InputLabelProps={{
                             shrink: true,
@@ -261,7 +261,10 @@ export default function CreateSlotsPage() {
         </>
     );
 }
-
+const today = new Date();
+//const numberOfDaysToAdd = 3;
+const date = today.setDate(today.getDate()); 
+const defaultValue = new Date(date).toISOString().split('T')[0] // yyyy-mm-dd
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;

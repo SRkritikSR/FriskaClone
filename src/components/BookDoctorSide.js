@@ -547,10 +547,11 @@ export const BookDoctorSide = () => {
                 },
               }}
               className="col-12 my-2 px-1 col-sm-4 col-xl-2"
+              
               id="date"
               label="Choose Date"
               type="date"
-              defaultValue="2022-05-19"
+              defaultValue={defaultValue}
               required
               InputLabelProps={{
                 shrink: true,
@@ -681,3 +682,7 @@ function a11yProps(index) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
+const today = new Date();
+//const numberOfDaysToAdd = 3;
+const date = today.setDate(today.getDate()); 
+const defaultValue = new Date(date).toISOString().split('T')[0] // yyyy-mm-dd
