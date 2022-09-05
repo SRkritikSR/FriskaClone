@@ -108,7 +108,7 @@ export default function Dashboard() {
 							<span className='dashboard-card-headline mb-5`'>Calendar</span>
 							<span className='dashboard-card-content'>Manage your day to day schedule here without making separate calendars for offline and online appointments.</span>
 							<Link to="book-doctor-side">
-								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Create Slots</button>
+								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Calendar</button>
 							</Link>
 						</div>
 					</div>
@@ -119,7 +119,7 @@ export default function Dashboard() {
 							<span className='dashboard-card-headline'>Manage Slots</span>
 							<span className='dashboard-card-content'>SCreate and manage your everyday time to check up patients simply by a click. Skip the hassle and get your schedule ready for your patients.</span>
 							<Link to="appointment-editor">
-								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Book Appointment</button>
+								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Manage Slots</button>
 							</Link>
 						</div>
 						<div className='col-8 col-sm-6 offset-md-1 d-flex'>
@@ -133,7 +133,7 @@ export default function Dashboard() {
 							<span className='dashboard-card-headline'>Appointment Queue</span>
 							<span className='dashboard-card-content'>Manage your real time patients for the day both offline and online on a single platform. Delay the appointments or swap the order of patients easily.</span>
 							<Link to="patient-queue">
-								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Patient Queue</button>
+								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Appointment Queue</button>
 							</Link>
 						</div>
 						<div className='col-8 col-sm-6 offset-md-1 d-flex'>
