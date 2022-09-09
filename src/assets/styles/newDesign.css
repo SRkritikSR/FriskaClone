@@ -100,6 +100,7 @@ body {
 
 .dashboard-card-content {
     font-size: 1.5vw;
+    width: 300px;
     /* font-weight: 600; */
     /* font-style: italic; */
     color: #12253d;

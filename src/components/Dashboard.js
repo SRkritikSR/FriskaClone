@@ -15,7 +15,8 @@ import promo1 from '../assets/images/dashboard/promo1.png';
 import promo2 from '../assets/images/dashboard/promo2.png';
 import promo3 from '../assets/images/dashboard/promo3.png';
 import microsoftTemplate from '../assets/images/dashboard/microsoft_template.jpg';
-
+import doctors from "../assets/images/whychooseus/doctors.png"
+import customers from "../assets/images/whychooseus/customers.png"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 import { Accordion } from 'react-bootstrap';
@@ -117,7 +118,7 @@ export default function Dashboard() {
 					<div className='row'>
 						<div className='col-4 col-sm-6 col-md-4 offset-md-1 d-flex flex-column justify-content-evenly uploadDocument-contentCol'>
 							<span className='dashboard-card-headline'>Manage Slots</span>
-							<span className='dashboard-card-content'>SCreate and manage your everyday time to check up patients simply by a click. Skip the hassle and get your schedule ready for your patients.</span>
+							<span className='dashboard-card-content'>Create and manage your everyday time to check up patients simply by a click. Skip the hassle and get your schedule ready for your patients.</span>
 							<Link to="appointment-editor">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Manage Slots</button>
 							</Link>
@@ -131,7 +132,7 @@ export default function Dashboard() {
 					<div className='row'>
 						<div className='col-4 col-sm-6 col-md-4 offset-md-1 d-flex flex-column justify-content-evenly uploadDocument-contentCol'>
 							<span className='dashboard-card-headline'>Appointment Queue</span>
-							<span className='dashboard-card-content'>Manage your real time patients for the day both offline and online on a single platform. Delay the appointments or swap the order of patients easily.</span>
+							<span className='dashboard-card-content'>Manage your real time patients for the day both offline and online on a single platform. Swap the order of patients easily or delay the appointments.</span>
 							<Link to="patient-queue">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Appointment Queue</button>
 							</Link>
@@ -202,7 +203,11 @@ export default function Dashboard() {
 					</Carousel.Item>
 				</Carousel>
 			</div>
-
+			<div >
+			<img className='w-100' src={customers} />
+			<img className='w-100' src={doctors} />
+			
+			</div>
 
 			{/* Why Choose us */}
 			<div className='container why-us-container py-4 py-md-5 ps-4'>
@@ -371,7 +376,7 @@ export default function Dashboard() {
 			</div>
 
 			<div className='container'>
-				<img className='w-100 my-5' src={microsoftTemplate}/>
+				{/* <img className='w-100 my-5' src={microsoftTemplate}/> */}
 			</div>
 		</>
 	);
