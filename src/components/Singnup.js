@@ -253,7 +253,7 @@ export default function Signup() {
 						</div>
 						<div className="d-flex justify-content-around align-items-center">
 							<p>
-								<Link to="/signup-doctor"> Signup as a Healthcare Professional </Link>
+								<Link to="/signup-doctor"> Sign Up as a Healthcare Professional </Link>
 							</p>
 						</div>
 

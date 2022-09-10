@@ -72,7 +72,19 @@ export default function whoWeAre() {
             <div className='container'>
                 <img className='w-100' src={section3} />
                 <img className='w-100' src={section4} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <img className='w-100' src={section5} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <img className='w-100' src={section6} />
                 <img className='w-100' src={section7} />
                 {/* <img className='w-100 contact-us' src={section8} /> */}

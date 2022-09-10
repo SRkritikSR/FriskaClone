@@ -158,7 +158,7 @@ export default function Signup() {
 								<Link to="/signup" style={{textDecoration:'none'}}><button className="dropdown-item darkerTextColor" type="button" style={{textDecoration:'none'}}>As User</button></Link>
 								<Link to="/signup-doctor" style={{textDecoration:'none'}}><button className="dropdown-item darkerTextColor" type="button" style={{textDecoration:'none'}}>As Doctor</button></Link>
 							</ul> */}
-							<Link to="/signup" style={{textDecoration:'none'}}> <a type='button' className='w-100 darkerTextColor' style={{textDecoration:'none'}}>Signup</a> </Link>
+							<Link to="/signup" style={{textDecoration:'none'}}> <a type='button' className='w-100 darkerTextColor' style={{textDecoration:'none'}}>Sign Up</a> </Link>
 						</div>
 
 						<span className="text-center darkerTextColor fw-bold">User Login Form</span>
@@ -232,12 +232,12 @@ export default function Signup() {
 					<hr className="w-75 mx-auto my-auto mt-3"></hr>
 					<div className="d-flex justify-content-around align-items-center">
 						<p className="mb-1 mt-2">
-							Not a User ? <Link to="/signup"> Signup </Link>
+							Not a User ? <Link to="/signup"> Sign Up </Link>
 						</p>
 					</div>
 					<div className="d-flex justify-content-around align-items-center mb-4">
 						<p>
-							<Link to="/login-doctor"> Login as Doctor </Link>
+							<Link to="/login-doctor"> Login as Healthcare Professional </Link>
 						</p>
 					</div>
 				</div>

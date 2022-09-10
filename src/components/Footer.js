@@ -47,7 +47,7 @@ export const Footer = () => {
 										<a href="/who-we-are" className="text-secondary">Who We Are</a>
 									</li>
 									<li className="mb-sm-2">
-										<a href="#!" className="text-secondary">Careers</a>
+										<a href="https://forms.gle/UMs1QaxX4nMMYWwb9" className="text-secondary">Careers(We are Hiring!)</a>
 									</li>
 									<li className="mb-sm-2">
 										<a href="#!" className="text-secondary">Contact Us</a>

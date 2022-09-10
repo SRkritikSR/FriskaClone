@@ -199,7 +199,7 @@ export default function SignupDoctors() {
 							<Link to="/signup"><button className="dropdown-item darkerTextColor" type="button">As Patient</button></Link>
 							<Link to="/signup-doctor"><button className="dropdown-item darkerTextColor" type="button">As Doctor</button></Link>
 						</ul> */}
-						<Link to="/signup"> <a type='button' className='w-100 darkerTextColor'>Signup</a> </Link>
+						<Link to="/signup"> <a type='button' className='w-100 darkerTextColor'>Sign Up</a> </Link>
 					</div>
 
 					<span className="text-center darkerTextColor fw-bold">Signup as a Healthcare Professional</span>
@@ -308,7 +308,7 @@ export default function SignupDoctors() {
 				</div>
 				<div className="d-flex justify-content-around align-items-center">
 					<p>
-						<Link to="/signup"> Signup as a User </Link>
+						<Link to="/signup"> Sign Up as a User </Link>
 					</p>
 				</div>
 			</div>
