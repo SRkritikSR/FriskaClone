@@ -232,7 +232,7 @@ export default function Signup() {
 					<hr className="w-75 mx-auto my-auto mt-3"></hr>
 					<div className="d-flex justify-content-around align-items-center">
 						<p className="mb-1 mt-2">
-							Not a User ? <Link to="/signup"> Sign Up </Link>
+							Not a User? <Link to="/signup"> Sign Up </Link>
 						</p>
 					</div>
 					<div className="d-flex justify-content-around align-items-center mb-4">
