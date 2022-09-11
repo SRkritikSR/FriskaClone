@@ -29,7 +29,13 @@ body {
     /* margin-top: 5vh; */
     margin-bottom: 10vh;
 }
-
+/* .citycards{
+    border-radius: 20px;
+} */
+#off50{
+    border: #12253d;
+    border-width: 3px;
+}
 .dashboard-rectangle {
     background: #a4edff3b;
     /* border-radius: 62px; */
@@ -46,7 +52,9 @@ body {
     z-index: 100;
     filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
 }
-
+/* .border{
+    border-width: 3px;
+} */
 .amoeba {
     width: 100%;
     height: 86vh;
@@ -101,6 +109,7 @@ body {
 .dashboard-card-content {
     font-size: 1.5vw;
     /* width: 300p; */
+    width: 389.2px;
     /* font-weight: 600; */
     /* font-style: italic; */
     color: #12253d;
@@ -135,6 +144,7 @@ body {
 
 .why-us-heading {
     font-size: 3rem;
+    margin-top: -110px;
     font-weight: bolder;
     width: 100%;
 }

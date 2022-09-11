@@ -107,7 +107,7 @@ export default function Dashboard() {
 						</div>
 						<div className='col-4 col-sm-6 d-flex flex-column justify-content-evenly bookAppointment-contentCol'>
 							<span className='dashboard-card-headline mb-5`'>Calendar</span>
-							<span className='dashboard-card-content'>Manage your day to day schedule here without making separate calendars for offline and online appointments.</span>
+							<span className='dashboard-card-content'>Manage your day to day schedule here without<br></br> making separate calendars for offline and <br></br>online appointments.</span>
 							<Link to="book-doctor-side">
 								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Calendar</button>
 							</Link>
@@ -175,8 +175,9 @@ export default function Dashboard() {
 
 
 			{/* Promotion */}
-			<div className='container mb-5'>
-				<Carousel className='border py-5' variant="dark" style={{}}>
+			<div id="off50">
+			<div className='container mb-5' borderWidth = "medium">
+				<Carousel className='border py-5 off50'  variant="dark" style={{}}>
 					<Carousel.Item interval={3000}>
 						<img
 							className="d-block mx-auto"
@@ -203,6 +204,7 @@ export default function Dashboard() {
 					</Carousel.Item>
 				</Carousel>
 			</div>
+			</div>
 			<div >
 			<img className='w-100' src={customers} />
 			<img className='w-100' src={doctors} />
@@ -227,7 +229,7 @@ export default function Dashboard() {
 								<span className='siteGrowth-infoCards-data'>Pune</span>
 								<span>City</span>
 							</div>
-							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
+							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards' >
 								<span className='siteGrowth-infoCards-data'>1500+</span>
 								<span>Happy Patients</span>
 							</div>
@@ -295,7 +297,10 @@ export default function Dashboard() {
 
 			</div>
 
-
+<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
 
 			{/* Testimonials */}
 			<div className='container py-4 pb-5 px-0' style={{ maxWidth: '100%', background: '#f4fdff' }}>
