@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext";
 import siteLogo from '../assets/images/companyName.png'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PersonIcon from '@mui/icons-material/Person';
+import '../assets/styles/nav-after-login.css'
 export const NavAfterLogin = (props) => {
 
   const [error, setError] = useState("");
@@ -32,29 +33,29 @@ export const NavAfterLogin = (props) => {
         <div className="collapse navbar-collapse bg-white" id="navbarTogglerDemo02">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-2">
               <li className="nav-item active mx-2 mx-lg-3">
-                <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh'}} to="/who-we-are">Who We Are</Link>
+                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh'}} to="/who-we-are">Who We Are</Link>
               </li>
               {isDoctor===true ?
               <>
               <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Calendar</Link>
+                  <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/appointment-editor">Calendar</Link>
                 </li>
                 <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/book-doctor-side">Manage Slots</Link>
+                  <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/book-doctor-side">Manage Slots</Link>
                 </li>
                 
                 <li className="nav-item ms-2 mx-lg-3">
-                  <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/patient-queue">Appointment Queue</Link>
+                  <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/patient-queue">Appointment Queue</Link>
                 </li>
               </>
               : <></>}
               {isDoctor===false ?
               <li className="nav-item ms-2 mx-lg-3">
-                <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/book-appointment-info">Book Appointment</Link>
+                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/book-appointment-info">Book Appointment</Link>
               </li> : <></>
             }
               <li className="nav-item ms-2 mx-lg-3">
-                <Link className="nav-link fw-bold text-dark" style={{ fontSize: '2.3vh' }} to="/customer-support">Support</Link>
+                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/customer-support">Support</Link>
               </li>
             </ul>
             <form className="d-flex mb-3 ms-2 m-sm-0">

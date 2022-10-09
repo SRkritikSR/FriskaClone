@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import 'bootstrap/js/dist/carousel'
 import { Link } from 'react-router-dom';
 import '../assets/styles/newDesign.css';
+import '../assets/styles/customnew.css';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
-import dashboardDoctor from '../assets/images/dashboard/dashboardDoctor.png';
+import dashboardDoctor from '../assets/images/dashboard/Dashboarddoc.webp';
 import bookAppointmentCardPic from '../assets/images/dashboard/docAndKidConsultation.png'
 import uploadDocumentCardPic from '../assets/images/dashboard/macLappi.png';
 import whyDoctorsJoinCard from '../assets/images/dashboard/docWithTab.png';
@@ -57,9 +58,8 @@ export default function Dashboard() {
 				<div className='px-0 dashboard-rectangle h-100'>
 					<div className='row h-100 mx-0'>
 						<div className='order-2 order-md-1 ps-0 col-sm-12 col-md-5 ps-md-5 pe-0 d-flex flex-column justify-content-around align-items-start h-100'>
-							<span className='px-2 dashboard-headline display-5 mt-3 mt-md-4'>Book Offline Appointments Directly From Your Phone</span>
-							<span className='mx-3 dashboard-content h5 mt-3'>Friska makes booking offline doctor appointments easier and more flexible so that you never have to wait for your turn when visiting a doctor.</span>
-							<Link to="/book-appointment-info" className='dashboard-knowmore mt-3 mb-3 mb-md-5 btn btn-outline-dark text-white button-color rounded-pill mx-3'>Learn More</Link>
+							<span className='font-fam pos-desc'>Friska makes booking offline doctor<br/> appointments easier and more<br/> flexible so that you never have to<br/> wait for your turn when visiting a<br/> doctor.</span>
+							<Link to="/book-appointment-info" className='zindex font-fam colr dashboard-knowmore mt-3 mb-3 mb-md-5 btn btn-outline-white text-white button-color mx-3'>Book an Appointment</Link>
 						</div>
 						<div className='order-1 order-md-2 col-sm-12 col-md-7 d-flex align-items-end'>
 							<img className='dashboard-doctor' src={dashboardDoctor}></img>
@@ -83,7 +83,7 @@ export default function Dashboard() {
 									</linearGradient>
 								</defs>
 							</svg> */}
-							<svg className='amoeba' viewBox="0 0 3255 2520" fill="none" xmlns="http://www.w3.org/2000/svg">
+							{/* <svg className='amoeba' viewBox="0 0 3255 2520" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M2815.43 918.52C2938.76 1135.29 3230.69 1267.27 3252.5 1515.72C3273.03 1749.67 3106.27 1983.86 2921.67 2129.09C2738.16 2273.47 2480.75 2261.07 2251.14 2303.55C2084.27 2334.42 1908.95 2288.18 1749.39 2345.95C1550.36 2418.01 1449.69 2544.16 1240.09 2514.66C1040.5 2486.57 702.154 2460.94 536.627 2345.95C359.248 2222.72 178.831 2220.83 39.2747 2056C-94.3166 1898.22 166.769 1594.58 135.108 1390.28C101.151 1171.17 6.96386 958.76 39.2738 739.393C73.4789 507.164 230.663 345.265 404.628 187.636C578.443 30.1436 723.581 88.5091 957.628 103.966C1186.04 119.05 1363.82 164.322 1591.54 187.636C1796.71 208.64 1973.34 -35.5948 2175.58 4.83832C2368.63 43.4353 2500.17 230.623 2613.09 391.872C2722.16 547.617 2721.4 753.253 2815.43 918.52Z" fill="url(#paint0_linear_557_249)" />
 								<defs>
 									<linearGradient id="paint0_linear_557_249" x1="1105.76" y1="-224.455" x2="2037" y2="2777" gradientUnits="userSpaceOnUse">
@@ -91,7 +91,7 @@ export default function Dashboard() {
 										<stop offset="0.84375" />
 									</linearGradient>
 								</defs>
-							</svg>
+							</svg> */}
 
 
 						</div>

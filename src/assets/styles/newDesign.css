@@ -37,18 +37,21 @@ body {
     border-width: 3px;
 }
 .dashboard-rectangle {
-    background: #a4edff3b;
+    background: 'white';
     /* border-radius: 62px; */
 }
 
 .dashboard-doctor {
+    margin-top:50px;
     position: absolute;
+    top:20%;
+    left:7%;
     margin-left: auto;
     /* margin-right: 5%; */
-    top: 15vh;
+    top: 10vh;
     /* left: 0px; */
     /* height: 85%; */
-    height: 40vw;
+    height: 30vw;
     z-index: 100;
     filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
 }
@@ -83,7 +86,7 @@ body {
 }
 
 .button-color {
-    background: #284F8F !important;
+    background: #00C4DE !important;
 }
 
 .bookAppointment-card {

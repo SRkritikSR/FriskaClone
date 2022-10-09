@@ -1,0 +1,22 @@
+.font-fam{
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+.zindex{
+    position:relative;
+top:21%;
+left:4%;
+width:462px;
+box-shadow: 1px 1px #00C4DE;
+font-weight:500;
+border-radius:16px;
+height:102;
+    z-index:100;
+}
+
+.pos-desc{
+    position:relative;
+font-size:28px;
+    top:40%;
+    left:7%;
+}
