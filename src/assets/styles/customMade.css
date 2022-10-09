@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 .websiteColor {
   background-color: #50DAEE !important;
 }
@@ -7,10 +9,57 @@
 }
 .su_but{
   margin-right: 20px;
+  text-decoration: none;
+}
+.text-deco{
+  text-decoration: none;
 }
 .darkerWebsiteColor {
   background-color: #40B2C1 !important;
 }
+
+.font-fam{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*nav bar hover animation*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#0087ca;
+}
+
+.pos-nav{
+position:relative;
+left:45%;
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 32px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/*nav bar anim ends */
+.style{
+  text-decoration: none;
+}
+
 
 .darkerTextColor {
   color: #40B2C1 !important;
