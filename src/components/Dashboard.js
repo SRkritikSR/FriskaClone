@@ -58,6 +58,8 @@ export default function Dashboard() {
 				<div className='px-0 dashboard-rectangle h-100'>
 					<div className='row h-100 mx-0'>
 						<div className='order-2 order-md-1 ps-0 col-sm-12 col-md-5 ps-md-5 pe-0 d-flex flex-column justify-content-around align-items-start h-100'>
+							<h2 className='font-fam head-1'>Now</h2>
+							<h2 className='font-fam head-2'>made</h2>
 							<span className='font-fam pos-desc'>Friska makes booking offline doctor<br/> appointments easier and more<br/> flexible so that you never have to<br/> wait for your turn when visiting a<br/> doctor.</span>
 							<Link to="/book-appointment-info" className='zindex font-fam colr dashboard-knowmore mt-3 mb-3 mb-md-5 btn btn-outline-white text-white button-color mx-3'>Book an Appointment</Link>
 						</div>
@@ -98,7 +100,8 @@ export default function Dashboard() {
 					</div>
 				</div>
 			</div>
-
+<br></br>
+<br></br>
 			{isDoctor ? <>
 				<div className='container bookAppointment-card'>
 					<div className='row'>
