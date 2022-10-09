@@ -6,6 +6,12 @@ import '../assets/styles/customnew.css';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+import txt1 from '../assets/images/dashboard/8774.png'
+import txt2 from '../assets/images/dashboard/8775.png'
+import txt3 from '../assets/images/dashboard/8776.png'
+import sqbox from '../assets/images/dashboard/Rectangle 15.png'
+import outerbox from '../assets/images/dashboard/Rectangle-4192.webp';
+import innerbox from '../assets/images/dashboard/Component 2.png';
 import dashboardDoctor from '../assets/images/dashboard/Dashboarddoc.webp';
 import bookAppointmentCardPic from '../assets/images/dashboard/docAndKidConsultation.png'
 import uploadDocumentCardPic from '../assets/images/dashboard/macLappi.png';
@@ -146,34 +152,18 @@ export default function Dashboard() {
 					</div>
 				</div>
 			\</> : <>
-				<div className='container bookAppointment-card'>
-					<div className='row'>
-						<div className='col-8 col-sm-6 d-flex'>
-							<img src={bookAppointmentCardPic} className='bookAppointmentCard-image w-100'></img>
-						</div>
-						<div className='col-4 col-sm-6 d-flex flex-column justify-content-evenly bookAppointment-contentCol'>
-							<span className='dashboard-card-headline mb-5`'>Book Offline Appointments</span>
-							<span className='dashboard-card-content'>No more standing in queues, sitting in the waiting area. Skip the hassle and get your health checked up quickly with live tracking system.</span>
-							<Link to="offline-booking">
-								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Book Now</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className='container bookAppointment-card uploadDocument-card'>
-					<div className='row'>
-						<div className='col-4 col-sm-6 col-md-4 offset-md-1 d-flex flex-column justify-content-evenly uploadDocument-contentCol'>
-							<span className='dashboard-card-headline'>Save Your Medical Records</span>
-							<span className='dashboard-card-content'>Save your medical records here securely so that you never forget them and get amazing discounts on booking appointments.</span>
-							<Link to="medicalRecords">
-								<button className='dashboard-card-button btn btn-dark text-white rounded-pill'>Upload</button>
-							</Link>
-						</div>
-						<div className='col-8 col-sm-6 offset-md-1 d-flex'>
-							<img src={uploadDocumentCardPic} className='uploadDocumentCard-image w-100'></img>
-						</div>
-					</div>
-				</div>
+			<div className='dashboard-frame'>
+				<img className='outerbox' src={outerbox} alt=''/>
+				<div>
+				<img className='innerbox' src={innerbox} alt=''/>
+				<img className='sq-box' src={sqbox} alt=''/>	
+				<img className='sq-box-2' src={sqbox} alt=''/>
+				<img className='sq-box-3' src={sqbox} alt=''/>
+				<img className='txt-1' src={txt1} alt=''/>
+				<img className='txt-2' src={txt2} alt=''/>
+				<img className='txt-3' src={txt3} alt=''/>
+			</div>
+			</div>
 			</>}
 
 

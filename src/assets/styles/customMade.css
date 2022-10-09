@@ -21,6 +21,9 @@
 .font-fam{
   font-family: 'Montserrat', sans-serif;
 }
+.opacity-nav{
+  opacity:75%;
+}
 
 /*nav bar hover animation*/
 
@@ -28,7 +31,7 @@
   display: inline-block;
   position: relative;
   color: 
-#0087ca;
+  #00C4DE;
 }
 
 .pos-nav{
@@ -40,11 +43,11 @@ left:45%;
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 32px;
+  height: 2.5px;
   bottom: 0;
   left: 0;
   background-color: 
-#0087ca;
+  #00C4DE;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

@@ -25,21 +25,21 @@ export const NavBeforeLogin = () => {
                 <Link className="nav-link fw-bold font-fam hover-underline-animation" style={{ fontSize: '2.3vh',color:'#00C4DE' }} to="/who-we-are">Who We Are</Link>
               </li>
               <li className="nav-item ms-2 mx-lg-2">
-                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/book-appointment-info">Book Appointment</Link>
+                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation opacity-nav" style={{ fontSize: '2.3vh' }} to="/book-appointment-info">Book Appointment</Link>
               </li>
               <li className="nav-item ms-2 mx-lg-2">
-                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation" style={{ fontSize: '2.3vh' }} to="/customer-support">Get in Touch</Link>
+                <Link className="nav-link fw-bold text-dark font-fam hover-underline-animation opacity-nav" style={{ fontSize: '2.3vh' }} to="/customer-support">Get in Touch</Link>
               </li>
             </ul>
             <form className="d-flex mb-3 ms-2 m-sm-0">
-              <Link to="/login" className='text-deco' style={{TextDecoration:'none'}}>
+              <Link to="/signup" className='text-deco' style={{TextDecoration:'none'}}>
                 <Button variant='contained' className="mx-2 fw-bold" style={{ fontSize: '2vh', backgroundColor:'#00C4DE'}}>
-                    <PersonIcon className='me-1'/> Login</Button>
+                    <PersonIcon className='me-1'/>Sign up</Button>
               </Link>
-              <Link to="/signup" className="su_but" style={{TextDecoration:'none'}}>
+              <Link to="/login" className="su_but" style={{TextDecoration:'none'}}>
                 {/* <button type="button"
                   className="btn btn-outline-secondary mx-2 fw-bold rounded" style={{ fontSize: '2.3vh',fontFamily:'sans-serif' }}>SignUp</button> */}
-                <Button variant="contained" className="mx-2 fw-bold" style={{ fontSize: '2vh', backgroundColor:'#00C4DE'} } >Sign Up</Button>
+                <Button variant="contained" className="mx-2 fw-bold" style={{ fontSize: '2vh', backgroundColor:'white',color:'#00C4DE'} } >Login</Button>
               </Link>
             </form>
           </div>
