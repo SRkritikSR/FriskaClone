@@ -6,6 +6,11 @@ import '../assets/styles/customnew.css';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+
+import midbox2 from '../assets/images/dashboard/Rectangle4196.png'
+import boximg3 from '../assets/images/dashboard/vector1.png'
+import boximg2 from '../assets/images/dashboard/vector2.png'
+import midbox from '../assets/images/dashboard/Rectangle4196.png'
 import txt1 from '../assets/images/dashboard/8774.png'
 import txt2 from '../assets/images/dashboard/8775.png'
 import txt3 from '../assets/images/dashboard/8776.png'
@@ -22,8 +27,8 @@ import promo1 from '../assets/images/dashboard/promo1.png';
 import promo2 from '../assets/images/dashboard/promo2.png';
 import promo3 from '../assets/images/dashboard/promo3.png';
 import microsoftTemplate from '../assets/images/dashboard/microsoft_template.jpg';
-import doctors from "../assets/images/whychooseus/doctors.png"
-import customers from "../assets/images/whychooseus/customers.png"
+import doctors from "../assets/images/dashboard/Doctor-img.png"
+import customers from "../assets/images/dashboard/Patient-img.png"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 import { Accordion } from 'react-bootstrap';
@@ -166,136 +171,27 @@ export default function Dashboard() {
 			</div>
 			</>}
 
-
-			{/* Promotion */}
-			<div id="off50">
-			<div className='container mb-5' borderWidth = "medium">
-				<Carousel className='border py-5 off50'  variant="dark" style={{}}>
-					<Carousel.Item interval={3000}>
-						<img
-							className="d-block mx-auto"
-							src={promo1}
-							alt="First slide"
-							style={{ width: '80%' }}
-						/>
-					</Carousel.Item>
-					<Carousel.Item interval={3000}>
-						<img
-							className="d-block mx-auto"
-							src={promo2}
-							alt="Second slide"
-							style={{ width: '80%' }}
-						/>
-					</Carousel.Item>
-					<Carousel.Item interval={3000}>
-						<img
-							className="d-block mx-auto"
-							src={promo3}
-							alt="Third slide"
-							style={{ width: '80%' }}
-						/>
-					</Carousel.Item>
-				</Carousel>
-			</div>
-			</div>
-			<div >
-			<img className='w-100' src={customers} />
-			<img className='w-100' src={doctors} />
-			
-			</div>
-
-			{/* Why Choose us */}
-			<div className='container why-us-container py-4 py-md-5 ps-4'>
-				<div className='row w-100 mx-0'>
-					<div className='col-md-6 d-flex flex-column align-self-center h-100 text-center'>
-						<span className='why-us-heading mb-3'>Why Choose Us?</span>
-						<span>
-							Friska makes booking offline doctor appointments easier and more flexible so that our customers don’t have to wait for their turn when visiting a doctor. We promise to deliver the best experience between our customers and doctors.
-						</span>
-
-						<div class="row justify-content-center mt-3 mt-sm-0">
-							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
-								<span className='siteGrowth-infoCards-data'>100+</span>
-								<span>Certified Doctors</span>
-							</div>
-							<div className='rounded mt-md-4 offset-md-1 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
-								<span className='siteGrowth-infoCards-data'>Pune</span>
-								<span>City</span>
-							</div>
-							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards' >
-								<span className='siteGrowth-infoCards-data'>1500+</span>
-								<span>Happy Patients</span>
-							</div>
-							{/* <div className='rounded mt-md-4 offset-md-1 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
-								<span className='siteGrowth-infoCards-data'>1900+</span>
-								<span>Patients Cured</span>
-							</div> */}
-						</div>
-					</div>
-					<div className='col-md-6 d-flex flex-column mt-4 my-md-auto whyjoin-doc-pat-container'>
-						<div className='row d-flex flex-row mb-2 mx-auto'>
-							<div className='row' style={{ alignItems: 'center' }}>
-								<div className='col h-100'>
-									{/* <div className="card mx-auto h-100 whyPatient-reason-card">
-										<div className="card-body">
-											<h4 className="card-title text-center">Patients</h4>
-											<img className='whyJoin-cards' src={whyPatientsJoinCard}></img>
-										</div>
-									</div> */}
-									<div class="flip-card">
-										<div class="flip-card-inner">
-											<div class="flip-card-front-patient">
-												<h4>Patients</h4>
-												<img className='whyJoin-cards' src={whyPatientsJoinCard}></img>
-											</div>
-											<div class="flip-card-back-patient">
-												<div className='mx-auto' style={{ width: '75%' }}>
-													<h1 className='mb-3'>Patients</h1>
-													<span className='px-3'>We strive to provide our customers with a simple platform to book, modify and track appointments with their doctors thereby saving their time at discounted prices.</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className='row d-flex flex-row mt-2 mx-auto'>
-							<div className='row' style={{ alignItems: 'center' }}>
-								<div className='col h-100'>
-									{/* <div className="card mx-auto h-100 whyDoctor-reason-card">
-										<div className="card-body why-front">
-											<h4 className="card-title text-center">Doctors</h4>
-											<img className='whyJoin-cards' src={whyDoctorsJoinCard}></img>
-										</div>
-									</div> */}
-									<div class="flip-card">
-										<div class="flip-card-inner">
-											<div class="flip-card-front-doctor">
-												<h4>Doctors</h4>
-												<img className='whyJoin-cards' src={whyDoctorsJoinCard}></img>
-											</div>
-											<div class="flip-card-back-doctor">
-												<div className='mx-auto' style={{ width: '75%' }}>
-													<h1 className='mb-3'>Doctors</h1>
-													<span className='px-3'>We support our doctors with the simplicity of our technology so that, they can operate with ease, multiply their earnings and establish their digital presence.</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			<h1 className='Topic'>How Friska Works</h1>
+			<span className='topic-2 font-fam'>Save time with the click of a button</span>
+			<div className='dashboard-frame'>
+			<img className='outerbox2 ' src={midbox} alt=''></img>
+			<img className='boximg2' src={boximg2} alt=''></img>
+			<span className='head-3 font-fam'>Book Offline<br></br>Appointments</span>
+			<span className='para-3 font-fam'>No more standing in queues,<br></br> sitting in the waiting area. Skip<br></br> the hassle and get your health<br></br> checked up quickly with live<br></br> tracking system.</span>
+			<Link to="/book-appointment-info" className='pos-btn2 font-fam colr dashboard-knowmore mt-3 mb-3 mb-md-5 btn btn-outline-white text-white button-color mx-3'>Book an Appointment</Link>
 				</div>
-
-			</div>
-
+<div className='dashboard-frame'>
+<img className='outerbox3 ' src={midbox2} alt=''></img>
+			<img className='boximg3' src={boximg3} alt=''></img>
+			<span className='head-4 font-fam'>Save Your <br></br>Medical Records</span>
+			<span className='para-4 font-fam'>Save your medical records here<br></br> securely so that you never forget <br></br>them and get amazing <br></br>discounts on booking<br></br> appointments.</span>
+			<Link to="/book-appointment-info" className='pos-btn font-fam colr dashboard-knowmore mt-3 mb-3 mb-md-5 btn btn-outline-white text-white button-color mx-3'>Upload Your Records</Link>
+</div>
+<img className=' space' src={customers} />
 <br></br>
-					<br></br>
-					<br></br>
-					<br></br>
+			<img className=' space' src={doctors} />
 
-			{/* Testimonials */}
+{/*
 			<div className='container py-4 pb-5 px-0' style={{ maxWidth: '100%', background: '#f4fdff' }}>
 				<div className='row text-center mx-0'>
 					<h2 className='pt-5 pb-2'>Our Happy Customers</h2>
@@ -316,7 +212,7 @@ export default function Dashboard() {
 										alt="Doc Avatar"
 										src={thumbnailDoc}
 										sx={{ width: 146, height: 146, bgcolor: 'lightblue' }}
-									/> */}
+									/> 
 									<Card.Title className='fw-bold testimonial-title' style={{ color: '#0d47a1' }}>
 										Helped me save my time from the queue.
 									</Card.Title>
@@ -358,7 +254,7 @@ export default function Dashboard() {
 										alt="Doc Avatar"
 										src={thumbnailDoc}
 										sx={{ width: 146, height: 146, bgcolor: 'lightblue' }}
-									/> */}
+									/> 
 									<Card.Title className='fw-bold testimonial-title' style={{ color: '#0d47a1' }}>
 										Very Helpful. Easy to take an appointment and manage medical records.
 									</Card.Title>
@@ -372,6 +268,137 @@ export default function Dashboard() {
 					</Carousel>
 				</div>
 			</div>
+
+
+			{/* Promotion */}
+			<div id="off50">
+			<div className='container mb-5' borderWidth = "medium">
+				<Carousel className='border py-5 off50'  variant="dark" style={{}}>
+					<Carousel.Item interval={3000}>
+						<img
+							className="d-block mx-auto"
+							src={promo1}
+							alt="First slide"
+							style={{ width: '80%' }}
+						/>
+					</Carousel.Item>
+					<Carousel.Item interval={3000}>
+						<img
+							className="d-block mx-auto"
+							src={promo2}
+							alt="Second slide"
+							style={{ width: '80%' }}
+						/>
+					</Carousel.Item>
+					<Carousel.Item interval={3000}>
+						<img
+							className="d-block mx-auto"
+							src={promo3}
+							alt="Third slide"
+							style={{ width: '80%' }}
+						/>
+					</Carousel.Item>
+				</Carousel>
+			</div>
+			</div>
+			<div >
+
+			
+			</div>
+
+			{/* Why Choose us *
+			<div className='container why-us-container py-4 py-md-5 ps-4'>
+				<div className='row w-100 mx-0'>
+					<div className='col-md-6 d-flex flex-column align-self-center h-100 text-center'>
+						<span className='why-us-heading mb-3'>Why Choose Us?</span>
+						<span>
+							Friska makes booking offline doctor appointments easier and more flexible so that our customers don’t have to wait for their turn when visiting a doctor. We promise to deliver the best experience between our customers and doctors.
+						</span>
+
+						<div class="row justify-content-center mt-3 mt-sm-0">
+							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
+								<span className='siteGrowth-infoCards-data'>100+</span>
+								<span>Certified Doctors</span>
+							</div>
+							<div className='rounded mt-md-4 offset-md-1 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
+								<span className='siteGrowth-infoCards-data'>Pune</span>
+								<span>City</span>
+							</div>
+							<div className='rounded mt-md-4 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards' >
+								<span className='siteGrowth-infoCards-data'>1500+</span>
+								<span>Happy Patients</span>
+							</div>
+							{/* <div className='rounded mt-md-4 offset-md-1 col-5 text-center border text-white bg-dark d-flex flex-column siteGrowth-infoCards'>
+								<span className='siteGrowth-infoCards-data'>1900+</span>
+								<span>Patients Cured</span>
+							</div> 
+						</div>
+					</div>
+					<div className='col-md-6 d-flex flex-column mt-4 my-md-auto whyjoin-doc-pat-container'>
+						<div className='row d-flex flex-row mb-2 mx-auto'>
+							<div className='row' style={{ alignItems: 'center' }}>
+								<div className='col h-100'>
+									{/* <div className="card mx-auto h-100 whyPatient-reason-card">
+										<div className="card-body">
+											<h4 className="card-title text-center">Patients</h4>
+											<img className='whyJoin-cards' src={whyPatientsJoinCard}></img>
+										</div>
+									</div> *
+									<div class="flip-card">
+										<div class="flip-card-inner">
+											<div class="flip-card-front-patient">
+												<h4>Patients</h4>
+												<img className='whyJoin-cards' src={whyPatientsJoinCard}></img>
+											</div>
+											<div class="flip-card-back-patient">
+												<div className='mx-auto' style={{ width: '75%' }}>
+													<h1 className='mb-3'>Patients</h1>
+													<span className='px-3'>We strive to provide our customers with a simple platform to book, modify and track appointments with their doctors thereby saving their time at discounted prices.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='row d-flex flex-row mt-2 mx-auto'>
+							<div className='row' style={{ alignItems: 'center' }}>
+								<div className='col h-100'>
+									{/* <div className="card mx-auto h-100 whyDoctor-reason-card">
+										<div className="card-body why-front">
+											<h4 className="card-title text-center">Doctors</h4>
+											<img className='whyJoin-cards' src={whyDoctorsJoinCard}></img>
+										</div>
+									</div> *
+									<div class="flip-card">
+										<div class="flip-card-inner">
+											<div class="flip-card-front-doctor">
+												<h4>Doctors</h4>
+												<img className='whyJoin-cards' src={whyDoctorsJoinCard}></img>
+											</div>
+											<div class="flip-card-back-doctor">
+												<div className='mx-auto' style={{ width: '75%' }}>
+													<h1 className='mb-3'>Doctors</h1>
+													<span className='px-3'>We support our doctors with the simplicity of our technology so that, they can operate with ease, multiply their earnings and establish their digital presence.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+
+			{/* Testimonials */}
+			
 
 			<div className='container'>
 				{/* <img className='w-100 my-5' src={microsoftTemplate}/> */}
