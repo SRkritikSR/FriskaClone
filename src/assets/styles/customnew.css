@@ -1,32 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
-
-
 .font-fam{
     font-family: 'Montserrat', sans-serif;
   }
-  .font-weig{
-    font-weight: 600;
-  }
-
-.pos-footer{
-    position: relative;
-    bottom: 35%;
-}
-.pos-btn2
-{
-    z-index: 100;
-    position: absolute;
-    top: 260%;
-    left: 54%;
-}
-.pos-btn
-{
-    z-index: 100;
-    position: absolute;
-    top: 348%;
-    left: 54%;
-}
-
+  
 .zindex{
     position:absolute;
 top:84%;
@@ -97,99 +72,10 @@ font-size:28px;
 .innerbox{
     position:absolute;
     left:20%;
-    top:128%;
+    top:133%;
     height:30vh;
     width:120vh;
 }
-
-.Topic{
-    font-weight:700;
-    position:absolute;
-    top:181%;
-    left:38%;
-}
-
-.space{
-    height: 500px;
-    width: 1320px;
-    margin-bottom: 80px;
-    margin-left: 110px;
-}
-
-
-
-.para-3{
-    font-size: 30px;
-    font-weight: 500;
-    opacity: 75%;
-    position: absolute;
-    left: 55%;
-    top: 227%;
-}
-.para-4{
-    font-size: 30px;
-    font-weight: 500;
-    opacity: 75%;
-    position: absolute;
-    left: 55%;
-    top: 315%;
-}
-.head-3{
-    font-size: 45px;
-    font-weight: 600;
-    opacity: 75%;
-    position: absolute;
-    left: 55%;
-    top: 205%;
-}
-.boximg3{
-    position: absolute;
-    left: 10%;
-    height: 300px;
-    width: 500px;
-    z-index: 10;
-}
-
-.head-4{
-    font-size: 45px;
-    font-weight: 600;
-    opacity: 75%;
-    position: absolute;
-    left: 55%;
-    top: 295%;
-}
-.outerbox3{
-    z-index: -1;
-    position:absolute;
-    left:5%;
-    height:600px;
-    width: 1400px;
-}
-.boximg2{
-    position: absolute;
-    left: 10%;
-    height: 300px;
-    width: 500px;
-    z-index: 10;
-}
-
-.outerbox2{
-    z-index: -1;
-    position:absolute;
-    left:5%;
-    height:600px;
-    width: 1400px;
-}
-
-.topic-2{
-    position:absolute;
-    top:188%;
-    font-weight:600;
-opacity:75%;
-    left:34.4%;
-    font-size:25px;
-}
-
 
 .txt-1
 {
