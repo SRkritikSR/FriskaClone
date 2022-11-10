@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.7rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1rem + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+}
+
+.guestBookingContainer {
+    /* background-color: antiquewhite; */
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10vw;
+}
+
+.guestHeroiMG {
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGuestBooking {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 80%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.bookingForm {
+    height: 30%;
+}
+
+.formGuestBooking form label {
+    font-size: var(--paraFontSmall);
+    font-weight: 1000;
+}
+
+.selectClass {
+    width: 80%;
+    height: 45%;
+    color: grey;
+}
+
+.nextBtn {
+    width: 60%;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--darkBlueBgColor);
+
+    box-shadow: rgba(0, 196, 222, 1) 0px 2px 5px -1px, rgba(0, 196, 222, 1)0px 1px 3px -1px;
+    color: white;
+    font-weight: 1000;
+    cursor: pointer;
+    margin-left: 15%;
+}

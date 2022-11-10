@@ -1,0 +1,227 @@
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.7rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1rem + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    --headingBookingSection: calc(1rem + 2vw);
+    --paraBookingSection: calc(.9rem + 1vw);
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+}
+
+.AppointmentsContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heroArea {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    height: 80%;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+}
+
+
+.imgHero {
+    width: 60%;
+
+}
+
+.contentHeroArea {
+    width: 60%;
+    height: 80%;
+    /* background-color: aqua; */
+    text-align: left;
+    /* border: 2px solid black; */
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroPara {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    height: 90%;
+}
+
+.heroArea h1 {
+    font-size: var(--headingBookingSection);
+    color: black;
+    opacity: 0.65;
+}
+
+.heroPara p {
+    font-size: var(--paraBookingSection);
+    color: black;
+    opacity: 0.65;
+}
+
+.heroBtn {
+
+    width: 60%;
+    height: 3vw;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 1000;
+    background-color: #00C4DE;
+    font-size: var(--paraFontSmall);
+    transition: all 0.5s ease-out;
+}
+
+.heroBtn:hover {
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+.cardsAboutBooking {
+    width: 90vw;
+    margin-left: 5vw;
+    /* background-color: aqua; */
+
+}
+
+.Cards {
+    transition: all 0.5s ease-out;
+}
+
+.Cards:hover {
+    transform: scale(1.04);
+}
+
+.cardsBrowseClinic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 20vw;
+}
+
+.offerReedem {
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+
+.offerHead {
+    font-size: var(--headingFontSize);
+}
+
+.offerBoxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.leftboxOffer,
+.rightboxOffer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: bisque; */
+    text-align: left;
+    padding: 2%;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.leftboxOffer p,
+.rightboxOffer p {
+    font-size: var(--paraFontSmall);
+    /* font-size: var(--paraFontSize); */
+    color: black;
+    opacity: 0.65;
+    font-weight: 600;
+}
+
+.leftboxOffer .p2 span {
+    color: var(--darkBlueBgColor);
+}
+
+.bookingProcess {
+    width: 100%;
+    text-align: center;
+    height: 75vh;
+    margin-top: 10vh;
+    background-color: rgba(0, 196, 222, 0.1);
+}
+
+.bookingProcessHead {
+    font-size: var(--headingFontSize);
+    margin-bottom: 4vh;
+}
+
+.stepsBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.outerBox {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+}
+
+.num {
+    font-size: var(--headingBookingSection);
+    font-weight: 1000;
+}
+
+.box {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 90%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 16px;
+    transition: all 0.5s ease-out;
+    background-color: white;
+}
+
+.box:hover {
+
+    transform: scale(1.04);
+}
+
+.processHead {
+    font-size: var(--headingFontSize);
+    font-weight: 600;
+}
+
+.processPara {
+    font-size: var(--paraFontSize);
+}

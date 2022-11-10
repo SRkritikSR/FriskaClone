@@ -1,0 +1,127 @@
+.rightContainer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: flex-end;
+    /* background-color: #00C4DE; */
+}
+
+.rightContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 100%; */
+    width: 60%;
+
+}
+
+.rightContainer ul li {
+    list-style: none;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+
+li:after {
+    display: block;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+}
+
+
+.LoginSignUpButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+
+.navLinks:hover {
+    color: red;
+
+}
+
+.navBarActive {
+    background-color: #00C4DE;
+    color: red;
+}
+
+.SignUp {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.SignUp a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(0.1rem + 1vw);
+
+}
+
+.SignUp:hover {
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+    background-color: white;
+}
+
+.SignUp:hover a {
+    color: black;
+
+}
+
+.Login {
+    background-color: white;
+    color: rgb(0, 196, 222);
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.Login a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(0.1rem + 1vw);
+}
+
+.Login:hover {
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+}
+
+
+
+/* css for navbar after Login */
+.userAfterContent {
+    width: 40%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.userProfileBtn {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: white;
+    width: var(--userIconWidth);
+    height: var(--userIconHeight);
+}
+
+.userProfileBtn ion-icon {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-radius: 50%;
+}
+
+.userAfterContent p {
+    color: white;
+}

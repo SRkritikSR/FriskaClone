@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.7rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1rem + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    --btnFont: calc(0.1rem + 0.7vw);
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+    --locationBtnBg: #E5F9FC;
+}
+
+.GCardOuterContainer {
+    /* background-color: #00C4DE; */
+    width: 17vw;
+    height: 24vh;
+    border-radius:10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: aliceblue;
+    margin-top: -11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topRow {
+    font-size: calc(1rem + 3vw);
+    color: #00C4DE;
+    font-weight: 1000;
+}
+
+.bottomRow {
+    font-size: var(--paraFontSize);
+}
+
+.bottomRowSentence {
+    /* font-size: calc(1rem + 3vw); */
+    /* color: blue; */
+}

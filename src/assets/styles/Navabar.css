@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.7rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1rem + 1vw);
+    --paraFontMedium: calc(0.1rem + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    --btnFont: calc(0.1rem + 0.7vw);
+    --navFont: calc(0.9rem + 9vw);
+    --userIconWidth: calc(2.4rem + 1vw);
+    --userIconHeight: calc(2rem + 1vw);
+
+
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+    --locationBtnBg: #E5F9FC;
+}
+
+.newNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 12vh;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-weight: 100;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    /* background-color: #324B50; */
+    overflow-x: hidden;
+    color: black;
+}
+
+
+.logoImgContainer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.logoImg {
+    width: 67.5%;
+    height: 50%;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: flex-end;
+    /* background-color: #00C4DE; */
+}
+
+.rightContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 100%; */
+    width: 40%;
+
+}
+
+
+/* li:hover{
+
+    background-color: #F5F7FA;
+} */
+
+.rightContainer ul li {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightContainer ul li:hover {
+    background-color: #f3f7f6;
+}
+
+
+li:after {
+    display: block;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+}
+
+.rightContainer ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+    cursor: pointer;
+    font-size: var(--paraFontMedium);
+}
+
+.LoginSignUpButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.NavButtons {
+    height: 40%;
+    border: none;
+    outline: none;
+    width: 8vw;
+    border-radius: 16px;
+    background-color: #00C4DE;
+}
+
+
+
+.navLinks:hover {
+    color: red;
+
+}
+
+.navBarActive {
+    background-color: #00C4DE;
+    color: red;
+}
+
+.SignUp {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease-out
+}
+
+.SignUp a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(0.1rem + 1vw);
+
+}
+
+.SignUp:hover {
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+}
+
+.SignUp:hover a {
+    color: black;
+
+}
+
+.Login {
+    background-color: white;
+    color: rgb(0, 196, 222);
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.Login a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(0.1rem + 1vw);
+}
+
+.Login:hover {
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+    font-weight: bold;
+}

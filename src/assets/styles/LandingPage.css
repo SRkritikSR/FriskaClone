@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.1rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1em + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+    --locationBtnBg: #E5F9FC;
+}
+
+.OuterContainer {
+    width: 100vw;
+
+    text-align: center;
+}
+
+.ContainerHeroArea {
+    width: 100%;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.HeroImage {
+    width: 100%;
+    padding: 0;
+}
+
+.HeroImageImg {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.BookingButton {
+    margin-left: 10%;
+    width: 20%;
+    height: 3vw;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #00C4DE;
+    border-radius: 16px;
+    transition: all 0.5s ease-out
+}
+
+.BookingButton a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--paraFontSmall);
+}
+
+.BookingButton:hover {
+    cursor: pointer;
+    border: 2px solid #00C4DE;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+}
+
+.BookingButton:hover a {
+    color: black;
+}
+
+
+.CommunityNumber {
+    width: 100vw;
+
+}
+
+.CommunityNumberImg {
+    width: 70%;
+}
+
+
+/* offer section */
+.offerPatientsSection {
+    width: 100%;
+    /* margin-left: 10%; */
+    /* background-color: var(--lightBlueBgColor); */
+    padding: 2px;
+    background-color: #00C4DE;
+    border-radius: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    background-color: #f3f7f6;
+    background-color: rgba(0, 196, 222, 0.1);
+}
+
+.marginClass {
+    margin-top: 10vh;
+}
+
+.offerHeading {
+    font-size: var(--headingFontSize);
+    color: black;
+}
+
+.offerPatients {
+    width: 100%;
+    /* color: var(--fontColor); */
+    color: white;
+}
+
+.cardsOfferContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 18vw;
+    /* background-color: #FFFFFF; */
+    /* background-color: #00C4DE; */
+    /* background-color: #f3f7f6; */
+
+    border-radius: 20px;
+}
+
+.cardsOffer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    height: 14vw;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.cardOfferImg {
+    width: 70%;
+
+}
+
+.cardsOfferHead {
+    font-size: var(--cardsFontSize);
+    font-style: Montserrat;
+}
+
+.feedbackSection {
+    width: 100%;
+
+}
+
+.feedbackSection h1 {
+    font-size: var(--headingFontSize);
+}
+
+.redeemHeading {
+    font-size: var(--headingFontSize);
+}
