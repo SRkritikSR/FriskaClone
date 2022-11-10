@@ -41,6 +41,7 @@ function LandingPageAfterLogin() {
   const [user] = useAuthState(auth);
 
 
+
   return (
     user ? <>
       <div className="OuterContainer">

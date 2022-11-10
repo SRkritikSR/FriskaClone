@@ -16,12 +16,26 @@ function NavbarAfterLogin() {
         textDecoration: "underline"
     };
 
+    
+
+    const user = firebase.auth().currentUser;
+  
+      // The user object has basic properties such as display name, email, etc.
+      const displayName = user.displayName;
+      const email = user.email;
+      const photoURL = user.photoURL;
+      const emailVerified = user.emailVerified;
+    
+    console.log(photoURL)
     let activeClassName = "underline"
 
     const logout = () => {
         auth.signOut();
     }
 
+    // const img = user.auth.UserProfile();
+    // console.log(img.PhotoUrl);
+    
     return (
         <div>
             <div>
@@ -55,9 +69,9 @@ function NavbarAfterLogin() {
                             <div className="userAfterContent">
                                 <button className="userProfileBtn"
                                     onClick={logout}>
-                                    <ion-icon name="person" className="userIcon"></ion-icon>
+                                    <img src={photoURL} alt="" className="dp"/>
                                 </button>
-                                <p>Hi, Aditya Gupta</p>
+                                <p style={{color:"black"}}>Hi, {displayName}</p>
 
                             </div>
 
