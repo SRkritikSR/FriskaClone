@@ -5,12 +5,14 @@ import 'firebase/firestore';
 
 const firebaseConfig = {
     // Your credentials
-    apiKey: "AIzaSyCCuAhYmH0WXKpKoDr7KrjIhRsI4ONxE6c",
-    authDomain: "friska-auth.firebaseapp.com",
-    projectId: "friska-auth",
-    storageBucket: "friska-auth.appspot.com",
-    messagingSenderId: "940037593977",
-    appId: "1:940037593977:web:eb805b6171c4119cadeda8"
+    apiKey: "AIzaSyBsBQGgRHEBszIBSg9td6OXu9_dSX0F5-w",
+    authDomain: "friska-production.firebaseapp.com",
+    databaseURL: "https://friska-production-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "friska-production",
+    storageBucket: "friska-production.appspot.com",
+    messagingSenderId: "421390674423",
+    appId: "1:421390674423:web:2bd1df096218059fbfa6f2",
+    measurementId: "G-MG3R2S2SJ9"
 };
 
 firebase.initializeApp(firebaseConfig);
