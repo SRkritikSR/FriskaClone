@@ -1,8 +1,21 @@
+.feedbackSection {
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.feedbackSection h1 {
+    font-size: var(--headingFontSize);
+}
+
+.redeemHeading {
+    font-size: var(--headingFontSize);
+}
+
 .FeedBackOuterContainer {
     /* width: 50vw; */
     width: 90vw;
     margin-left: 5vw;
-    margin-top: 2vh;
+    /* margin-top: vh; */
     height: 100vh;
     background-color: white;
     display: flex;
@@ -33,6 +46,7 @@
     justify-content: center;
     transition: all 0.5s ease-out;
     background-color: rgba(0, 196, 222, 0.1);
+    /* align-items: center; */
 }
 
 .feedbacks:hover {
@@ -73,8 +87,9 @@
 
 .lowerContainer {
     margin-top: 2%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     width: 90%;
+    /* background-color: aqua; */
 }
 
 .lowerContainer p {

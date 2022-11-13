@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import { React, useState } from 'react'
 import { Route, Routes } from "react-router-dom"
 
 
@@ -23,6 +23,9 @@ import Component from './Components/Pages/LandingPageComponent/Component';
 import NewGuestImgPage1 from './Components/Pages/BookAppointments Page/NewGuestImgPage1';
 import NewGuestPage2 from './Components/Pages/BookAppointments Page/NewGuestPage2';
 
+import WhoWeAre from './Components/Pages/WhoWeAre';
+import SearchDoctors from './Components/Pages/SearchAppointments/SearchDoctors';
+
 // function App() {
 //   const [user] = useAuthState(auth);
 //   return (
@@ -30,6 +33,7 @@ import NewGuestPage2 from './Components/Pages/BookAppointments Page/NewGuestPage
 //   );
 // }
 // ******************** signUp -> login -> dashboard(book appointments page) -> upload documents********************************
+
 
 
 
@@ -65,6 +69,8 @@ function App() {
       {/* <Component /> */}
       {/* <NewGuestImgPage1 /> */}
       {/* <NewGuestPage2 /> */}
+      {/* <WhoWeAre /> */}
+      {/* <SearchDoctors /> */}
     </>
 
   );

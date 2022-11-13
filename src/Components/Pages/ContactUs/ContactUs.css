@@ -1,10 +1,12 @@
+:root {}
+
 .ContactUsPageContainer {
+
     overflow-x: hidden !important;
     width: 100vw;
     height: 70vh;
-    /* background-color: #00C4DE; */
     color: black;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 
 .upperContainerContact {
@@ -12,16 +14,27 @@
     width: 100vw;
     height: 60%;
     text-align: center;
-    /* background-color: antiquewhite; */
+    background: url(../../../assets/img/contactImg1.jpg) rgb(0, 0, 0, 0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .upperContainerContact h1 {
+    color: white;
     font-size: var(--headingFontSize);
+    /* color: var(--fontColor); */
 }
 
 .upperContainerContact p {
-    color: black;
+    color: white;
     font-size: var(--paraFontSize);
+    /* color: var(--fontColor); */
+    /* color: rgba(226, 226, 226, 0.1); */
 }
 
 .heroContactImg {
@@ -36,6 +49,11 @@
 
 }
 
+.contactContent p {
+    font-size: var(--contactPageFont);
+    line-height: 2.3rem;
+}
+
 .headingCustomer {
     font-size: var(--headingFontSize);
     /* color: white; */
@@ -46,7 +64,6 @@
 
 .lowerContainer {
     width: 70%;
-    /* background-color: red; */
     height: 32%;
     overflow-y: hidden;
     display: flex;
@@ -55,53 +72,55 @@
     justify-content: space-evenly;
 }
 
-.contactCard1 {
+
+
+.contactCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    width: 20%;
-    height: 100%;
-    text-align: center;
-    border-top: 2px solid black;
-}
-
-.contactCard1 p {
-    color: black;
-
-}
-
-.contactCard2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     background-color: white;
     width: 20%;
     height: 100%;
     color: black;
     text-align: center;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
 }
 
-.contactCard2 p {
+.contactCard p {
 
     color: black;
 }
 
-.contactCard1 ion-icon {
+.contactIconContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.heightMail {
+    height: 50%;
+
+}
+
+.contactCard ion-icon {
     width: 3vw;
     height: 3vw;
 }
 
-.contactCard2 ion-icon {
+.contactCard ion-icon {
     width: 3vw;
     height: 3vw;
 }
 
 .callContent,
-.emailContent {}
+.emailContent {
+    margin-top: 10px;
+    line-height: 1.5rem;
+}
 
 .callContent span {
     color: rgba(0, 196, 222, 1);

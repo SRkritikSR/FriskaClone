@@ -25,7 +25,7 @@ function Footer() {
                 <div className="containerLeft3 containerFoot">
                     <h4>SUPPORT</h4>
                     <p><Link>support@friskanow.com</Link></p>
-                    <p>+918983176450</p>
+                    <p>+91 8983176450</p>
                 </div>
                 <div className="containerLeft4 containerFoot">
                     <h4>MORE</h4>
@@ -34,13 +34,13 @@ function Footer() {
                 </div>
                 <div className="containerLeft5 containerFoot">
                     <h4>CONTACT</h4>
-                    <p><Link>www.friskanow.com</Link></p>
+
                     <span>
                         <Link><ion-icon name="logo-linkedin"></ion-icon></Link>
                         <Link><ion-icon name="logo-whatsapp"></ion-icon></Link>
 
-                        <p className='copyright'> &#169; Friska Technologies </p>
                     </span>
+                    <p className='copyright'> &#169; Friska Technologies </p>
                 </div>
             </div>
 

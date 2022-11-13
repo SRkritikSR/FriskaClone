@@ -9,11 +9,6 @@ import siteLogo from '../../assets/img/companyName.png'
 import googleLogo from '../../assets/img/Login Form/Google Icon.png'
 
 function Login() {
-
-
-
-
-
     // const [mynumber, setnumber] = useState("");
     // const [otp, setotp] = useState('');
     // const [show, setshow] = useState(false);
@@ -56,6 +51,7 @@ function Login() {
     //         alert("Wrong code");
     //     })
     // }
+
     return (
         <div className='LoginformOuterContainer'>
             <div className="LoginFormContainer">
@@ -70,13 +66,18 @@ function Login() {
                             <button className="sendBtn">Send OTP</button>
                         </div>
                     </div>
-                    <div className="OTPEntry">
+
+
+                    <div className="OTPEntry" >
                         <p className="otpHeading">Enter OTP</p>
                         <div className="OTPInputs">
 
                             <input type="text" name="" id="" className='inputOTP' />
                         </div>
                     </div>
+
+
+
                     <button className="LoginBtn">Login</button>
                     <br />
                     <h5 className="googleaccount">Don't have an account? <a href="">Sign Up</a></h5>
@@ -84,7 +85,7 @@ function Login() {
 
                     <p className='Or'>Or</p>
                     <br />
-                    <button className="LoginGoogleBtn" onClick={gsign}>  Sign in with Google</button>
+                    <button className="LoginGoogleBtn" onClick={gsign}> <img src={googleLogo} alt="" />  Sign in with Google</button>
 
                 </div>
             </div>

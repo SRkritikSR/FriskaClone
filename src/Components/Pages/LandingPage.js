@@ -47,7 +47,7 @@ function LandingPage() {
     <div className="OuterContainer">
       {user ? <NavbarAfterLogin /> :
         <Navbar />}
-      {/* <br /><br /> */}
+
       <div className="ContainerHeroArea">
         <div className="HeroImage"><img className="HeroImageImg" src={HeroImage} alt="" />
           <button className='BookingButton'>
@@ -58,22 +58,13 @@ function LandingPage() {
         </div>
 
       </div>
-      <br /><br /><br /><br />
       <Component />
-      <br /><br /><br /><br />
       <WorkingFriska />
-
-      {/* offer section */}
       <OfferSectionPatients />
       <OfferSectionDoctor />
-
-      <br /><br /><br /><br />
       <div className="feedbackSection">
-    
         <FeedbackSection />
-
       </div>
-
       <FooterComponent />
     </div>
 

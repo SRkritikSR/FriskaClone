@@ -12,8 +12,11 @@ function WorkingFriskaCard(props) {
                 <img src={props.imgSrc} className="imageWorkingImg" alt="" />
             </div>
             <div className="contentWorking">
-                <h1 className="contentWorkingHeading">{props.contentWorkingHeading}</h1>
-                <h2 className="contentWorkingPara">{props.contentWorkingPara} </h2>
+                <div className="headingCard">
+                    <h1 className="contentWorkingHeading">{props.contentWorkingHeading}</h1>
+                    <br />
+                    <h2 className="contentWorkingPara">{props.contentWorkingPara} </h2>
+                </div>
                 <button className="contentWorkingButton widthBtn"><a href="#">{props.btnContent} </a></button>
             </div>
         </div>

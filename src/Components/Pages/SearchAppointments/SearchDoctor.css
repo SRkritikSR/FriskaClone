@@ -1,0 +1,143 @@
+:root {
+    /*  sizes */
+    --headingFontSize: calc(1rem + 1vw);
+    --paraFontSize: calc(0.7rem + 1vw);
+    --cardsFontSize: calc(0.3rem + 1vw);
+    --paraFontSmall: calc(0.1rem + 1vw);
+    --iconSize: calc(0.3rem + 1vw);
+    --btnFont: calc(0.1rem + 0.9vw);
+    /* colors */
+    --darkBlueBgColor: #00C4DE;
+    --lightBlueBgColor: #E5F9FC;
+    --fontColor: rgba(0, 0, 0, 0.65);
+    --darkBlueBgCss: rgba(0, 196, 222, 1);
+    --locationBtnBg: #E5F9FC;
+    --commonBlueColor: background-color: rgba(0, 196, 222, 0.1);
+}
+
+.outerSearchContainer {
+    width: 100vw;
+    background-color: rgba(234, 240, 243, 1);
+}
+
+.leftSearchPart {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-between;
+}
+
+.topPartSearch {
+    width: 100%;
+    height: 6vh;
+}
+
+.searchHeading {
+    font-size: var(--headingFontSize);
+}
+
+.rightTopPart {
+    background-color: bisque;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.searchCity {
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #E5F9FC;
+    border: none;
+    outline: none;
+    font-size: var(--btnFont);
+}
+
+.searchDoctor {
+    font-size: var(--btnFont);
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #E5F9FC;
+    border: none;
+    outline: none;
+}
+
+.searchPart {
+    margin-top: 10vh;
+    margin-left: 5%;
+    background-color: #00C4DE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.searchPart input {
+    height: 8vh;
+    width: 80%;
+    font-size: var(--paraFontSmall);
+}
+
+.filterBtn {
+    height: 8vh;
+    width: 10%;
+}
+
+
+
+/* for doctors ROW */
+.DocRowOuterContainer {
+    width: 100vw;
+    height: 50vh;
+    /* background-color: #00C4DE; */
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* for doctor card */
+.DocCard {
+    width: 20%;
+    height: 90%;
+    background-color: red;
+    border-radius: 20px;
+    background-color: rgba(229, 249, 252, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.docImg {
+    width: 90%;
+    height: 60%;
+}
+
+.docName {
+    font-size: var(--paraFontSize);
+    color: black;
+    font-weight: 600;
+}
+
+.docPrice {
+    font-size: var(--paraFontSmall);
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 600;
+
+}
+
+/* load more button */
+.loadMoreBtn {
+    width: 20%;
+    height: 8vh;
+    margin-left: 40%;
+    margin-top: 10vh;
+}

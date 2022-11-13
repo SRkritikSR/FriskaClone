@@ -16,16 +16,16 @@ function NavbarAfterLogin() {
         textDecoration: "underline"
     };
 
-    
+
 
     const user = firebase.auth().currentUser;
-  
-      // The user object has basic properties such as display name, email, etc.
-      const displayName = user.displayName;
-      const email = user.email;
-      const photoURL = user.photoURL;
-      const emailVerified = user.emailVerified;
-    
+
+    // The user object has basic properties such as display name, email, etc.
+    const displayName = user.displayName;
+    const email = user.email;
+    const photoURL = user.photoURL;
+    const emailVerified = user.emailVerified;
+
     console.log(photoURL)
     let activeClassName = "underline"
 
@@ -35,7 +35,7 @@ function NavbarAfterLogin() {
 
     // const img = user.auth.UserProfile();
     // console.log(img.PhotoUrl);
-    
+
     return (
         <div>
             <div>
@@ -49,29 +49,29 @@ function NavbarAfterLogin() {
                                 <NavLink
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
-                                    ,({textDecoration: 'none'})}
+                                        , ({ textDecoration: 'none' })}
                                     exact="true" activeclassname="navBarActive" to="/">Who We Are</NavLink>
                             </li>
                             <li className="navLinks">
                                 <NavLink
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
-                                    ,({textDecoration: 'none'})}
+                                        , ({ textDecoration: 'none' })}
                                     exact="true" activeclassname="navBarActive" to="/BookApoointmentsPage">Book Appointment</NavLink>
                             </li>
                             <li className="navLinks">
                                 <NavLink
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
-                                        ,({textDecoration: 'none'})}
+                                        , ({ textDecoration: 'none' })}
                                     exact="true" activeclassname="navBarActive" to="/ContactUsPage">Get In Touch</NavLink>
                             </li>
                             <div className="userAfterContent">
                                 <button className="userProfileBtn"
                                     onClick={logout}>
-                                    <img src={photoURL} alt="" className="dp"/>
+                                    <img src={photoURL} alt="" className="dp" />
                                 </button>
-                                <p style={{color:"black"}}>Hi, {displayName}</p>
+                                <p style={{ color: "black" }}>Hi, {displayName}</p>
 
                             </div>
 
