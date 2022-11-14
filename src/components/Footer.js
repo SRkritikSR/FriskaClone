@@ -30,7 +30,7 @@ function Footer() {
                 <div className="containerLeft4 containerFoot">
                     <h4>MORE</h4>
                     <p> <Link to="/PrivacyPolicy" >Privacy Policy</Link> </p>
-                    <p> <Link> Terms & Conditions</Link></p>
+                    <p> <Link to="/TermsAndConditions"> Terms & Conditions</Link></p>
                 </div>
                 <div className="containerLeft5 containerFoot">
                     <h4>CONTACT</h4>
