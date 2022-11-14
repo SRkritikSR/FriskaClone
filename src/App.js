@@ -28,6 +28,7 @@ import SearchDoctors from './Components/Pages/SearchAppointments/SearchDoctors';
 import PrivacyPolicy from './Components/Pages/PrivacyPolicy';
 
 import TermsAndConditions from './Components/Pages/TermsAndConditions';
+import WhoWeAreOld from './Components/Pages/WhoWeAreOld';
 
 // function App() {
 //   const [user] = useAuthState(auth);
@@ -58,6 +59,9 @@ function App() {
         <Route path='/ContactUsPage' element={<ContactUsPage />} ></Route>
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} ></Route>
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
+        <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
+        <Route path='/WhoWeAreOld' element={<WhoWeAreOld />} ></Route>
+
 
       </Routes>
 
@@ -79,7 +83,7 @@ function App() {
       {/* <SearchDoctors /> */}
       {/* <PrivacyPolicy /> */}
       {/* <TermsAndConditions /> */}
-
+      {/* <WhoWeAreOld /> */}
     </>
 
   );

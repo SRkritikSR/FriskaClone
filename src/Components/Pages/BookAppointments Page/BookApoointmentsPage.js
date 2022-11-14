@@ -98,14 +98,16 @@ function BookApoointmentsPage() {
                         <p className="num">#2</p>
                         <div className="box">
                             <p className="processHead">Select Your Doctor and Time</p>
-                            <p className='processPara' > Click on book now, login and select city </p>
+                            <p className='processPara' > Select doctor
+                                and available
+                                time slot </p>
                         </div>
                     </div>
                     <div className="outerBox">
 
                         <p className="num">#3</p>
                         <div className="box">
-                            <p className="processHead">Its Done</p>
+                            <p className="processHead">Its Done !!</p>
                             <p className='processPara' > Review your appointment and pay </p>
                         </div>
                     </div>
