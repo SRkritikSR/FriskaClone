@@ -7,9 +7,9 @@ import '../../assets/styles/Common.css'
 
 
 // importing components
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 
- function Navabar() {
+function Navabar() {
 
     let activeStyle = {
         textDecoration: "underline"
@@ -21,29 +21,32 @@ import { NavLink } from "react-router-dom"
         <div>
             <nav className="newNav">
                 <div className="logoImgContainer">
-                    <img src={siteLogo} alt="Med-D" className='logoImg' />
+                    <Link to="/">
+                        <img src={siteLogo} alt="Med-D" className='logoImg' />
+
+                    </Link>
                 </div>
                 <div className="rightContainer">
                     <ul>
                         <li className="navLinks">
-                            <NavLink 
+                            <NavLink
                                 style={({ isActive }) =>
                                     isActive ? activeStyle : undefined
-                                ,({textDecoration: 'none'})}
+                                    , ({ textDecoration: 'none' })}
                                 exact="true" activeclassname="navBarActive" to="/">Who We Are</NavLink>
                         </li>
                         <li className="navLinks">
                             <NavLink
                                 style={({ isActive }) =>
                                     isActive ? activeStyle : undefined
-                                ,({textDecoration: 'none'})}
+                                    , ({ textDecoration: 'none' })}
                                 exact="true" activeclassname="navBarActive" to="/BookApoointmentsPage">Book Appointment</NavLink>
                         </li>
                         <li className="navLinks">
                             <NavLink
                                 style={({ isActive }) =>
                                     isActive ? activeStyle : undefined
-                                ,({textDecoration: 'none'})}
+                                    , ({ textDecoration: 'none' })}
                                 exact="true" activeclassname="navBarActive" to="/ContactUsPage">Get In Touch</NavLink>
                         </li>
 
