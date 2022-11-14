@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { firebase, auth, provider } from '../../firebase';
 
 // styles
@@ -8,6 +8,9 @@ import '../../assets/styles/SignUpForm.css'
 // images
 import siteLogo from '../../assets/img/companyName.png'
 import googleLogo from '../../assets/img/Login Form/Google Icon.png'
+
+
+
 
 function SignUp() {
     // const [mynumber, setnumber] = useState("");
@@ -19,6 +22,9 @@ function SignUp() {
             window.location = '/'; //After successful login, user will be redirected to home.html
         }
     });
+
+
+    
     // // Sent OTP
     // const signin = () => {
 
@@ -36,6 +42,40 @@ function SignUp() {
     //             window.location.reload()
     //         });
     // }
+
+    const [mynumber, setnumber] = useState("");
+    const [otp, setotp] = useState('');
+    const [show, setshow] = useState(false);
+    const [final, setfinal] = useState('');
+  
+    // Sent OTP
+    const signin = () => {
+  
+        if (mynumber === "" || mynumber.length < 10) return;
+  
+        let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+        auth.signInWithPhoneNumber(mynumber, verify).then((result) => {
+            setfinal(result);
+            alert("code sent")
+            setshow(true);
+        })
+            .catch((err) => {
+                alert(err);
+                window.location.reload()
+            });
+    }
+  
+    // Validate OTP
+    const ValidateOtp = () => {
+        if (otp === null || final === null)
+            return;
+        final.confirm(otp).then((result) => {
+            // success
+        }).catch((err) => {
+            alert("Wrong code");
+        })
+    }
+
 
     const gsign = () => {
         console.log("button clicked")
@@ -67,22 +107,28 @@ function SignUp() {
                             Your Name :  <br /><br />
                             <input type="text" placeholder='Your Name' id="nameInputSign" />
                         </label>
+                        <div style={{ display: !show ? "" : "none" }}>
                         <label htmlFor="phoneNumber">
+
                             Phone Number : <br /><br />
-                            <input type="text" placeholder='10 digit Mobile Number' id="phoneNumberSign" />
+                            <input value={mynumber} onChange={(e) => { 
+                       setnumber(e.target.value) }} type="text" placeholder='10 digit Mobile Number' id="phoneNumberSign" />
                         </label>
+                        <div id="recaptcha-container"></div>
                         <div className="buttonSendSignUp">
-                            <button className="sendBtnSignUp">Send OTP</button>
+                            <button  onClick={signin} className="sendBtnSignUp">Send OTP</button>
                         </div>
+                    </div>
                     </div>
                     <br />
-                    <div className="OTPEntry">
+                    <div className="OTPEntry" style={{ display: show ? "block" : "none" }}>
                         <p className="otpHeading">Enter OTP</p>
                         <div className="OTPInputs">
-                            <input type="text" name="" id="" className='inputOTP' />
+                            <input  onChange={(e) => { setotp(e.target.value) }} type="text" name="" id="" className='inputOTP' />
                         </div>
+                        <button onClick={ValidateOtp} className="SignUpBtn">Sign Up</button>
                     </div>
-                    <button className="SignUpBtn">Sign Up</button>
+                
 
                     <br />
 

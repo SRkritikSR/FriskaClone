@@ -41,6 +41,10 @@ function Login() {
             window.location = '/'; //After successful login, user will be redirected to home.html
         }
     });
+
+
+    
+
     // Validate OTP
     // const ValidateOtp = () => {
     //     if (otp === null || final === null)

@@ -8,13 +8,15 @@ import Footer from '../../Footer'
 // importing css
 import './SearchDoctor.css'
 import {firebase,auth} from '../../../firebase'
-import { NavAfterLogin } from './../../NavAfterLogin';
 import Navabar from '../Navabar';
+import NavbarAfterLogin from '../NavbarAfterLogin'
 function SearchDoctors() {
     const user = firebase.auth().currentUser;
     return (
         <>
-            { user ? <Navabar></Navabar> : <NavAfterLogin></NavAfterLogin> }
+           { user ?
+        <NavbarAfterLogin></NavbarAfterLogin> : <Navabar></Navabar>
+    }
             <div className='outerSearchContainer'>
 
                 <div className="topPartSearch">
