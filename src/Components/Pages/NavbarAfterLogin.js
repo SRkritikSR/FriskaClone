@@ -52,7 +52,7 @@ const user = firebase.auth().currentUser;
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                         , ({ textDecoration: 'none' })}
-                                    exact="true" activeclassname="navBarActive" to="/">Who We Are</NavLink>
+                                    exact="true" activeclassname="navBarActive" to="/WhoWeAreOld">Who We Are</NavLink>
                             </li>
                             <li className="navLinks">
                                 <NavLink

@@ -169,7 +169,7 @@
 
 .bookingProcessHead {
     font-size: var(--headingFontSize);
-    margin-bottom: 4vh;
+    /* margin-bottom: 4vh; */
 }
 
 .stepsBoxes {

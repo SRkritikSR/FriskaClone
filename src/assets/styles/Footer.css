@@ -1,8 +1,12 @@
+:root {
+    --iconSize: calc(1rem + 1vw);
+}
+
 .FooterContainer {
     width: 100vw;
     bottom: 0px;
     height: 24vh;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     overflow-x: hidden;
     box-shadow: 0px -1px 6px -5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px -1px 6px -5px rgba(0, 0, 0, 0.75);
@@ -57,7 +61,7 @@ h4 {
 }
 
 .containerFoot span a ion-icon {
-    font-size: var(--iconSize);
+    font-size: calc(0.rem + 1vw);
     margin-left: 4px;
     color: black;
 }

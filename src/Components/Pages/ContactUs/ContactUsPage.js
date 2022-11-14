@@ -39,13 +39,13 @@ function ContactUsPage() {
 
                             <ion-icon name="call-outline"></ion-icon>
                         </div>
-                        <p className="callContent">Call us at <span>+91 8983176450</span>  to speak to our support representative</p>
+                        <p className="callContent">Call us at <span> <a href="tel:8983176450" style={{ textDecoration: "none", color: "#00C4DE" }}>+91-8983176450</a></span>  to speak to our support representative</p>
                     </div>
                     <div className="contactCard">
                         <div className="contactIconContainer heightMail">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
-                        <p className="emailContent">Send us an email to <span>support@friskanow.com</span> </p>
+                        <p className="emailContent">Send us an email to <span>  <a href="mailto: support@friskanow.com " target="_blank" style={{ textDecoration: "none", color: "#00C4DE" }}>support@friskanow.com</a></span> </p>
                     </div>
                 </div>
             </div>
