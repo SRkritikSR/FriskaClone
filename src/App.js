@@ -25,6 +25,7 @@ import NewGuestPage2 from './Components/Pages/BookAppointments Page/NewGuestPage
 
 import WhoWeAre from './Components/Pages/WhoWeAre';
 import SearchDoctors from './Components/Pages/SearchAppointments/SearchDoctors';
+import PrivacyPolicy from './Components/Pages/PrivacyPolicy';
 
 // function App() {
 //   const [user] = useAuthState(auth);
@@ -53,6 +54,8 @@ function App() {
         <Route path='/Login' element={<Login />} ></Route>
         <Route path='/SignUp' element={<SignUp />} ></Route>
         <Route path='/ContactUsPage' element={<ContactUsPage />} ></Route>
+        <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} ></Route>
+
       </Routes>
 
       {/* <LandingPage /> */}
@@ -71,6 +74,8 @@ function App() {
       {/* <NewGuestPage2 /> */}
       {/* <WhoWeAre /> */}
       {/* <SearchDoctors /> */}
+      {/* <PrivacyPolicy /> */}
+
     </>
 
   );

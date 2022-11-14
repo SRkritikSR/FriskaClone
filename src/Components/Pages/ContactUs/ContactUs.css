@@ -5,7 +5,7 @@
     overflow-x: hidden !important;
     width: 100vw;
     height: 70vh;
-    color: black;
+    color: rgb(207, 207, 207);
     /* margin-top: 10vh; */
 }
 
@@ -14,7 +14,8 @@
     width: 100vw;
     height: 60%;
     text-align: center;
-    background: url(../../../assets/img/contactImg1.jpg) rgb(0, 0, 0, 0.1);
+    /* background: url(../../../assets/img/contactImg1.jpg) rgb(0, 0, 0, 0.1); */
+    background-color: #e5f9fc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,13 +26,14 @@
 }
 
 .upperContainerContact h1 {
-    color: white;
+    color: rgb(224, 224, 224);
     font-size: var(--headingFontSize);
     /* color: var(--fontColor); */
+    color: black;
 }
 
 .upperContainerContact p {
-    color: white;
+    color: black;
     font-size: var(--paraFontSize);
     /* color: var(--fontColor); */
     /* color: rgba(226, 226, 226, 0.1); */

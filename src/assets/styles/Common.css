@@ -10,6 +10,7 @@
 :root {
     /*  sizes */
     --headingFontSize: calc(1rem + 1vw);
+    --headingFontLargeSize: calc(2rem + 1vw);
     --paraFontSize: calc(0.7rem + 1vw);
     --cardsFontSize: calc(0.3rem + 1vw);
     --paraFontSmall: calc(0.1rem + 1vw);

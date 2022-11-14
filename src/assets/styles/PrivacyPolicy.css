@@ -1,0 +1,30 @@
+.PPOuterContainer {
+    width: 100vw;
+
+}
+
+.PPHeroArea {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/PrivacyPolicy/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.PPHeading {
+    color: white;
+    font-size: var(--headingFontLargeSize);
+}
+
+.PPContent {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5vh;
+}
+
+.PPContent ul {
+    margin-left: 2.5%;
+}

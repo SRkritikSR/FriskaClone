@@ -1,0 +1,146 @@
+.AboutUsOuterContainer {
+    width: 100vw;
+}
+
+.topPartAboutUs {
+    height: 40vh;
+    background-color: #00C4DE;
+    display: flex;
+    flex-direction: row;
+}
+
+.topLeftAboutUs {
+    width: 60%;
+    background-color: #00C4DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.topRightAboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.topAboutHeroImg {
+    width: 60%;
+    height: 40%;
+}
+
+.tagLine {
+    font-size: var(--paraFontSize);
+    color: white;
+}
+
+.imgCompAbout {
+    width: 100vw;
+    height: 60vh;
+}
+
+.imgComp {
+    width: 100%;
+    height: 100%;
+}
+
+.AboutComponentInfo {
+    width: 100vw;
+    height: 122vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftCompInfo {
+    width: 60%;
+}
+
+.bookingCompAbt {
+    color: #00C4DE;
+    font-size: calc(2rem + 2vw);
+    margin-left: 10%;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.rightCompInfo {
+    height: 100%;
+    width: 40%;
+}
+
+.imgComp2Abt {
+    width: 100%;
+    height: 100%;
+}
+
+.contentTop {
+    position: absolute;
+    width: 80vw;
+    background-color: #00C4DE;
+    padding-left: 6%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 6%;
+    top: 177%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    line-height: 250%;
+}
+
+.paraContentTop {
+
+    /* margin-left: 1%; */
+    font-size: var(--paraFontSize);
+    color: white;
+    font-weight: 600;
+}
+
+.ourIdea {
+    width: 100vw;
+    margin-top: 10vh;
+    height: 70vh;
+}
+
+.innerOurIdea {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-color: #00C4DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topIdea {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineDivider {
+    width: 40%;
+    height: 3px;
+    background-color: white;
+}
+
+.bottomIdea {
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paraIdea {
+    color: white;
+    text-align: center;
+    font-size: var(--paraFontSize);
+}

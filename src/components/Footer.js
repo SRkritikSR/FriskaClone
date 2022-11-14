@@ -29,14 +29,14 @@ function Footer() {
                 </div>
                 <div className="containerLeft4 containerFoot">
                     <h4>MORE</h4>
-                    <p> <Link>Privacy Policy</Link> </p>
+                    <p> <Link to="/PrivacyPolicy" >Privacy Policy</Link> </p>
                     <p> <Link> Terms & Conditions</Link></p>
                 </div>
                 <div className="containerLeft5 containerFoot">
                     <h4>CONTACT</h4>
 
                     <span>
-                        <Link><ion-icon name="logo-linkedin"></ion-icon></Link>
+                        <Link to="https://www.linkedin.com/company/friskanow/about/"><ion-icon name="logo-linkedin"></ion-icon></Link>
                         <Link><ion-icon name="logo-whatsapp"></ion-icon></Link>
 
                     </span>
