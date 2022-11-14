@@ -18,9 +18,10 @@ function NavbarAfterLogin() {
 
 
 
-    const user = firebase.auth().currentUser;
+const user = firebase.auth().currentUser;
 
-    // The user object has basic properties such as display name, email, etc.
+// The user object has basic properties such as display name, email, etc.
+
     const displayName = user.displayName;
     const email = user.email;
     const photoURL = user.photoURL;
@@ -31,7 +32,8 @@ function NavbarAfterLogin() {
 
     const logout = () => {
         auth.signOut();
-    }
+
+}
 
     // const img = user.auth.UserProfile();
     // console.log(img.PhotoUrl);
