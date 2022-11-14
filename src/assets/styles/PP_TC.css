@@ -1,0 +1,42 @@
+.PPOuterContainer {
+    width: 100vw;
+
+}
+
+.PPHeading {
+    color: white;
+    font-size: var(--headingFontLargeSize);
+}
+
+.PPContent {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5vh;
+}
+
+.TCContent {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5vh;
+}
+
+.TCContent ul {
+
+    margin-left: 2.5%;
+}
+
+.PPContent ul {
+    margin-left: 2.5%;
+}
+
+.PPpara {
+    font-size: calc(0.7rem + 1vw);
+}
+
+.PPContent h2 {
+    font-size: calc(0.5rem + 1vw);
+}
+
+.PPContent h4 {
+    font-size: calc(0.5rem + 0.8vw);
+}

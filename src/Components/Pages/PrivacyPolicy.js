@@ -1,33 +1,31 @@
 import React from 'react'
 import Navabar from './Navabar'
 import Footer from '../Footer'
-
-import '../../assets/styles/PrivacyPolicy.css'
+import HeroPP from '../Pages/PP_TCHeroArea'
+import '../../assets/styles/PP_TC.css'
 function PrivacyPolicy() {
     return (
         <>
             <Navabar />
             <div className="PPOuterContainer">
-                <div className="PPHeroArea">
-                    <h1 className="PPHeading">Privacy Policy</h1>
-                </div>
+                <HeroPP head="Privacy Policy" />
                 <div className="PPContent">
-                    <p>Last updated: 4th November, 2022</p>
+                    <p className="PPpara">Last updated: 4th November, 2022</p>
                     <br />
-                    <p>This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+                    <p className="PPpara">This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
                     </p>
                     <br />
-                    <p>We use Your Personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+                    <p className="PPpara">We use Your Personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
                     <br />
                     <h2>Interpretation and Definitions</h2>
                     <br />
                     <h4>Interpretation</h4>
                     <br />
-                    <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in the singular or the plural.</p>
+                    <p className="PPpara">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in the singular or the plural.</p>
                     <br />
                     <h4>Definitions</h4>
                     <br />
-                    <p>For the purposes of this Privacy Policy:</p>
+                    <p className="PPpara">For the purposes of this Privacy Policy:</p>
                     <br />
                     <ul>
                         <li> <b>Account</b>  means a unique account created for You to access our Service or parts of our Service.
@@ -58,7 +56,7 @@ function PrivacyPolicy() {
                     <br />
                     <h4>Personal Data</h4>
                     <br />
-                    <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally, identifiable information may include, but is not limited to:</p> <br />
+                    <p className="PPpara">While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally, identifiable information may include, but is not limited to:</p> <br />
                     <ul>
                         <li>Email address</li> <br />
                         <li>First name and last name</li> <br />
@@ -68,18 +66,18 @@ function PrivacyPolicy() {
                         <li>Usage Data</li> <br />
                     </ul>
                     <h4>Usage Data</h4>
-                    <p>Usage Data is collected automatically when using the Service.
+                    <p className="PPpara">Usage Data is collected automatically when using the Service.
                     </p> <br />
-                    <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+                    <p className="PPpara">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
                     <br />
-                    <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device's unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+                    <p className="PPpara">When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device's unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
                     <br />
-                    <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+                    <p className="PPpara">We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
                     </p>
                     <br />
                     <h2>Tracking Technologies and Cookies</h2>
                     <br />
-                    <p>
+                    <p className="PPpara">
                         We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyse Our Service. The technologies We use may include:
                     </p>
                     <ul>
@@ -88,9 +86,9 @@ function PrivacyPolicy() {
                         <li> <b>Web Beacons.</b> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).
                         </li> <br />
                     </ul> <br />
-                    <p>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the Free Privacy Policy website article.</p> <br />
+                    <p className="PPpara">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the Free Privacy Policy website article.</p> <br />
                     <h2>Use of Your Personal Data</h2> <br />
-                    <p>The Company may use Personal Data for the following purposes:</p>
+                    <p className="PPpara">The Company may use Personal Data for the following purposes:</p>
                     <br />
                     <ul>
                         <li> <b>To provide and maintain our Service,</b>including monitoring the usage of our Service.
@@ -109,7 +107,7 @@ function PrivacyPolicy() {
                         <li><b>For other purposes:</b>We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and evaluating and improving our Service, products, services, marketing, and your experience.
                         </li> <br />
                     </ul>
-                    <p>We may share your personal information in the following situtations: </p> <br />
+                    <p className="PPpara">We may share your personal information in the following situtations: </p> <br />
                     <ul>
                         <li><b>With Service Providers: </b>We may share Your personal information with Service Providers to monitor and analyse the use of our Service, to contact You.</li>
                         <li><b>For business transfers: </b>We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
@@ -124,40 +122,40 @@ function PrivacyPolicy() {
                         </li> <br />
                     </ul>
                     <h2>Retention of Your Personal Data</h2> <br />
-                    <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p> <br />
-                    <p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p> <br />
+                    <p className="PPpara">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p> <br />
+                    <p className="PPpara">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p> <br />
                     <h2>Transfer of Your Personal Data</h2> <br />
-                    <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</p> <br />
-                    <p>
+                    <p className="PPpara">Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</p> <br />
+                    <p className="PPpara">
                         Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.
                     </p> <br />
-                    <p>
+                    <p className="PPpara">
                         The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
                     </p> <br />
                     <h2>Delete Your Personal Data</h2> <br />
-                    <p>
+                    <p className="PPpara">
                         You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
                     </p> <br />
-                    <p>
+                    <p className="PPpara">
                         Our Service may allow You to delete certain information about You from within the Service.
                     </p> <br />
-                    <p>
+                    <p className="PPpara">
                         You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.
                     </p> <br />
-                    <p>
+                    <p className="PPpara">
                         Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.
                     </p> <br />
                     <h2>Disclosure of Your Personal Data</h2> <br />
                     <h4>Business Transactions</h4> <br />
-                    <p>If the Company is involved in a merger, acquisition, or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p> <br />
+                    <p className="PPpara">If the Company is involved in a merger, acquisition, or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p> <br />
                     <h4>Law enforcement</h4> <br />
-                    <p>
+                    <p className="PPpara">
                         Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
                     </p> <br />
                     <h2>
                         Other legal requirements
                     </h2> <br />
-                    <p>
+                    <p className="PPpara">
                         The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
 
                     </p> <br />
@@ -170,19 +168,19 @@ function PrivacyPolicy() {
                         </li> <br />
                     </ul>
                     <h2>Security of Your Personal Data</h2> <br />
-                    <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, we cannot guarantee its absolute security.</p> <br />
+                    <p className="PPpara">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, we cannot guarantee its absolute security.</p> <br />
                     <h2>Children's Privacy</h2> <br />
-                    <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under 13 years. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, we take steps to remove that information from Our servers.</p> <br />
-                    <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, we may require Your parent's consent before We collect and use that information.</p> <br />
+                    <p className="PPpara">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under 13 years. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, we take steps to remove that information from Our servers.</p> <br />
+                    <p className="PPpara">If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, we may require Your parent's consent before We collect and use that information.</p> <br />
                     <h2>Links to Other Websites</h2> <br />
-                    <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third-party link, you will be directed to that third party's site. Please review the Privacy Policy of every site you visit.</p> <br />
-                    <p>We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p> <br />
+                    <p className="PPpara">Our Service may contain links to other websites that are not operated by Us. If You click on a third-party link, you will be directed to that third party's site. Please review the Privacy Policy of every site you visit.</p> <br />
+                    <p className="PPpara">We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p> <br />
                     <h2>Changes to this Privacy Policy</h2> <br />
-                    <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p> <br />
-                    <p>We will let You know via email and/or a prominent notice on Our Service before the change becomes effective and update the "Last updated" date at the top of this Privacy Policy.</p> <br />
-                    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p> <br />
+                    <p className="PPpara">We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p> <br />
+                    <p className="PPpara">We will let You know via email and/or a prominent notice on Our Service before the change becomes effective and update the "Last updated" date at the top of this Privacy Policy.</p> <br />
+                    <p className="PPpara">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p> <br />
                     <h2>Contact Us</h2> <br />
-                    <p>If you have any questions about this Privacy Policy, you can contact us:</p> <br />
+                    <p className="PPpara">If you have any questions about this Privacy Policy, you can contact us:</p> <br />
                     <ul>
                         <li>By email: support@friskanow.com
                         </li> <br />
