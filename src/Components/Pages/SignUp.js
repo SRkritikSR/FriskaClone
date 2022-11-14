@@ -10,9 +10,6 @@ import siteLogo from '../../assets/img/companyName.png'
 import googleLogo from '../../assets/img/Login Form/Google Icon.png'
 
 
-
-
-import { Link } from 'react-router-dom'
 function SignUp() {
     // const [mynumber, setnumber] = useState("");
     // const [otp, setotp] = useState('');
