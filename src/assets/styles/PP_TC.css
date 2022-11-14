@@ -1,5 +1,10 @@
 .PPOuterContainer {
     width: 100vw;
+    margin-bottom: 10vh;
+}
+
+.TCOuterContainer {
+    margin-bottom: 10vh;
 
 }
 
@@ -20,9 +25,26 @@
     margin-top: 5vh;
 }
 
+.TCContent ul li {
+    font-size: calc(0.4rem + 1vw);
+}
+
+.TCPara {
+    font-size: calc(0.4rem + 0.7vw);
+}
+
+.TCContent h2 {
+    font-size: calc(0.3rem + 1vw);
+}
+
 .TCContent ul {
 
     margin-left: 2.5%;
+}
+
+.TCContent ul li {
+    font-size: calc(0.4rem + 0.7vw);
+
 }
 
 .PPContent ul {
@@ -30,13 +52,18 @@
 }
 
 .PPpara {
-    font-size: calc(0.7rem + 1vw);
+    font-size: calc(0.4rem + 0.7vw);
 }
 
+
 .PPContent h2 {
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.3rem + 1vw);
 }
 
 .PPContent h4 {
-    font-size: calc(0.5rem + 0.8vw);
+    font-size: calc(0.2rem + 1vw);
+}
+
+.PPContent ul li {
+    font-size: calc(0.4rem + 0.7vw);
 }

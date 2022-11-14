@@ -61,8 +61,6 @@ function App() {
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
         <Route path='/WhoWeAreOld' element={<WhoWeAreOld />} ></Route>
-
-
       </Routes>
 
       {/* <LandingPage /> */}

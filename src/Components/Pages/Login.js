@@ -3,7 +3,7 @@ import { firebase, auth, provider } from '../../firebase';
 // styles
 import '../../assets/styles/Common.css'
 import '../../assets/styles/LoginForm.css'
-
+import { Link } from 'react-router-dom'
 // images
 import siteLogo from '../../assets/img/companyName.png'
 import googleLogo from '../../assets/img/Login Form/Google Icon.png'
@@ -80,12 +80,12 @@ function Login() {
 
                     <button className="LoginBtn">Login</button>
                     <br />
-                    <h5 className="googleaccount">Don't have an account? <a href="">Sign Up</a></h5>
+                    <h4 className="googleaccount">Don't have an account? <Link to="/SignUp">Sign Up</Link></h4>
                     <br />
 
                     <p className='Or'>Or</p>
                     <br />
-                    <button className="LoginGoogleBtn" onClick={gsign}> <img src={googleLogo} alt="" />  Sign in with Google</button>
+                    <button className="LoginGoogleBtn" onClick={gsign}> <img src={googleLogo} alt="google" className='googleLogo' />  Sign in with Google</button>
 
                 </div>
             </div>

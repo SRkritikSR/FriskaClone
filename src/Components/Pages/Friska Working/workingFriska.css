@@ -12,7 +12,7 @@
 }
 
 .workingFriskaHeading2 {
-    color: rgb(204, 204, 204);
+    color: rgba(0, 0, 0, 0.65);
 
 }
 
@@ -26,7 +26,7 @@
     justify-content: center;
     height: 40%;
     color: aliceblue;
-    margin-top: 2.5vh;
+    margin-top: 8vh;
     border-radius: 16px;
 }
 

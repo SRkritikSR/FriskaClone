@@ -9,6 +9,7 @@ import '../../assets/styles/SignUpForm.css'
 import siteLogo from '../../assets/img/companyName.png'
 import googleLogo from '../../assets/img/Login Form/Google Icon.png'
 
+import { Link } from 'react-router-dom'
 function SignUp() {
     // const [mynumber, setnumber] = useState("");
     // const [otp, setotp] = useState('');
@@ -78,6 +79,7 @@ function SignUp() {
                     <br />
                     <div className="OTPEntry">
                         <p className="otpHeading">Enter OTP</p>
+                        <br />
                         <div className="OTPInputs">
                             <input type="text" name="" id="" className='inputOTP' />
                         </div>
@@ -86,9 +88,9 @@ function SignUp() {
 
                     <br />
 
-                    <button className="SignUpGoogleBtn" onClick={gsign} > <img src={googleLogo} alt="" /> Sign in with Google</button>
-
-                    <h5 className="googleaccount">Already have an account? <a href="">Login</a></h5>
+                    <button className="SignUpGoogleBtn" onClick={gsign} > <img src={googleLogo} alt="google" className="googleLogo" /> Sign in with Google</button>
+                    <br />
+                    <h4 className="googleaccount">Already have an account? <Link to="/Login">Login</Link></h4>
                     {/* <button style={{ "marginLeft": "20px" }}
                         onClick={logout}>
                         Logout

@@ -25,11 +25,16 @@
 
 .containerFoot {
     width: 40%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: left;
+}
+
+.containerFoot a {
+    /* background-color: black; */
+    font-size: var(--paraFontSmall);
 }
 
 .siteLogoFooter,
@@ -61,7 +66,12 @@ h4 {
 }
 
 .containerFoot span a ion-icon {
-    font-size: calc(0.rem + 1vw);
+    font-size: calc(0.5rem + 1vw);
     margin-left: 4px;
     color: black;
+}
+
+.subHeadings {
+    /* height: 20%; */
+    /* background-color: aquamarine; */
 }

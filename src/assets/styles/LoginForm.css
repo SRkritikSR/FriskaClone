@@ -58,6 +58,7 @@
 
 .LoginForm input {
     border-radius: 10px;
+    padding-left: 4%;
 }
 
 .LoginForm label input::placeholder {
@@ -130,8 +131,8 @@
 }
 
 .LoginBtn {
-    width: 70%;
-    height: 20%;
+    width: 65%;
+    height: 16%;
     border: none;
     outline: none;
     border-radius: 16px;
@@ -161,6 +162,13 @@
     justify-content: center;
     font-size: var(--btnFont);
 
+}
+
+.LoginGoogleBtn a {}
+
+.googleLogo {
+
+    margin-right: 2px;
 }
 
 .googleaccount {

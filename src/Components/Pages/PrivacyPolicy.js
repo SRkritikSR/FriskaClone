@@ -17,6 +17,7 @@ function PrivacyPolicy() {
                     <br />
                     <p className="PPpara">We use Your Personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
                     <br />
+                    <br />
                     <h2>Interpretation and Definitions</h2>
                     <br />
                     <h4>Interpretation</h4>
@@ -48,11 +49,12 @@ function PrivacyPolicy() {
                         </li>
                     </ul>
                     <br />
+                    <br />
                     <h2>Collecting and Using Your Personal Data
                     </h2>
                     <br />
-                    <h3>Types of Data Collected
-                    </h3>
+                    <h4>Types of Data Collected
+                    </h4>
                     <br />
                     <h4>Personal Data</h4>
                     <br />
@@ -65,7 +67,7 @@ function PrivacyPolicy() {
                         <li>Details for Financial Transactions</li> <br />
                         <li>Usage Data</li> <br />
                     </ul>
-                    <h4>Usage Data</h4>
+                    <h4>Usage Data</h4> <br />
                     <p className="PPpara">Usage Data is collected automatically when using the Service.
                     </p> <br />
                     <p className="PPpara">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
@@ -75,11 +77,13 @@ function PrivacyPolicy() {
                     <p className="PPpara">We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
                     </p>
                     <br />
+                    <br />
                     <h2>Tracking Technologies and Cookies</h2>
                     <br />
                     <p className="PPpara">
                         We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyse Our Service. The technologies We use may include:
                     </p>
+                    <br />
                     <ul>
                         <li> <b>Cookies or Browser Cookies.</b>. A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, you may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.
                         </li> <br />
@@ -87,6 +91,9 @@ function PrivacyPolicy() {
                         </li> <br />
                     </ul> <br />
                     <p className="PPpara">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the Free Privacy Policy website article.</p> <br />
+
+                    <br />
+
                     <h2>Use of Your Personal Data</h2> <br />
                     <p className="PPpara">The Company may use Personal Data for the following purposes:</p>
                     <br />
@@ -110,6 +117,7 @@ function PrivacyPolicy() {
                     <p className="PPpara">We may share your personal information in the following situtations: </p> <br />
                     <ul>
                         <li><b>With Service Providers: </b>We may share Your personal information with Service Providers to monitor and analyse the use of our Service, to contact You.</li>
+                        <br />
                         <li><b>For business transfers: </b>We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
                         </li> <br />
                         <li><b>With Affiliates: </b>We may share Your information with Our affiliates, in which case we will require those affiliates to honour this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners, or other companies that We control or that are under common control with Us.
@@ -121,6 +129,9 @@ function PrivacyPolicy() {
                         <li><b>With Your consent:</b>We may disclose Your personal information for any other purpose with Your consent.
                         </li> <br />
                     </ul>
+
+
+                    <br /><br />
                     <h2>Retention of Your Personal Data</h2> <br />
                     <p className="PPpara">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p> <br />
                     <p className="PPpara">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p> <br />

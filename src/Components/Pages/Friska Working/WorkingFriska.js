@@ -18,6 +18,7 @@ const WorkingFriska = () => {
     return (
         <div className="workingFriska">
             <h1 className='workingFriskaHeading'>How Friska Works</h1>
+            <br />
             <h2 className='workingFriskaHeading2'>Save time with the click button</h2>
 
             {WorkingFriskaData.map((val) => {

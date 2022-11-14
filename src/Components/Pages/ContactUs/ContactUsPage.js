@@ -24,10 +24,13 @@ function ContactUsPage() {
             <div className="ContactUsPageContainer">
                 <div className="upperContainerContact">
                     {/* <img src={heroContactImg} alt="" class="heroContactImg" /> */}
-                    <h1 className="headingCustomer">Welcome to Friska Customer Support</h1>
-                    <div className="contactContent">
+                    <div className="CUHead">
 
+                        <h1 className="headingCustomer">Welcome to Our Customer Support!</h1>
+                        <br />
                         <p>We are ready to help you!</p>
+                    </div>
+                    <div className="contactContent">
                         <p>Have an issue with your booking or any other issues?</p>
                         <p>Our team is ready to help you.</p>
                         <p>7am – 9pm</p>
