@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 // importing css
+
 import '../../assets/styles/NavbarAfterLogin.css'
 import '../../assets/styles/Common.css'
 
@@ -18,9 +19,10 @@ function NavbarAfterLogin() {
 
 
 
-    const user = firebase.auth().currentUser;
+const user = firebase.auth().currentUser;
 
-    // The user object has basic properties such as display name, email, etc.
+// The user object has basic properties such as display name, email, etc.
+
     const displayName = user.displayName;
     const email = user.email;
     const photoURL = user.photoURL;
@@ -31,7 +33,8 @@ function NavbarAfterLogin() {
 
     const logout = () => {
         auth.signOut();
-    }
+
+}
 
     // const img = user.auth.UserProfile();
     // console.log(img.PhotoUrl);
@@ -64,7 +67,7 @@ function NavbarAfterLogin() {
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                         , ({ textDecoration: 'none' })}
-                                    exact="true" activeclassname="navBarActive" to="/ContactUsPage">Get In Touch</NavLink>
+                                    exact="true" activeclassname="navBarActive" to="/ContactUs">Get In Touch</NavLink>
                             </li>
                             <div className="userAfterContent">
                                 <button className="userProfileBtn"

@@ -47,7 +47,7 @@ function Navabar() {
                                 style={({ isActive }) =>
                                     isActive ? activeStyle : undefined
                                     , ({ textDecoration: 'none' })}
-                                exact="true" activeclassname="navBarActive" to="/ContactUsPage">Get In Touch</NavLink>
+                                exact="true" activeclassname="navBarActive" to="/ContactUs">Get In Touch</NavLink>
                         </li>
 
                     </ul>

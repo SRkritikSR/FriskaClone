@@ -29,6 +29,7 @@ import PrivacyPolicy from './Components/Pages/PrivacyPolicy';
 
 import TermsAndConditions from './Components/Pages/TermsAndConditions';
 import WhoWeAreOld from './Components/Pages/WhoWeAreOld';
+import Myprofile from './Components/Pages/MyProfile/myprofile';
 
 // function App() {
 //   const [user] = useAuthState(auth);
@@ -53,10 +54,12 @@ function App() {
         <Route path='/' element={<LandingPage />} ></Route>
         <Route path='/home' element={<LandingPageAfterLogin />} ></Route>
         <Route element={<Error />} ></Route>
+        <Route path='/MyProfile' element={<Myprofile/>}></Route>
+        <Route path='/SearchDoctors' element={<SearchDoctors/>}></Route>
         <Route path='/BookApoointmentsPage' element={<BookAppointmentsPage />} ></Route>
         <Route path='/Login' element={<Login />} ></Route>
         <Route path='/SignUp' element={<SignUp />} ></Route>
-        <Route path='/ContactUsPage' element={<ContactUsPage />} ></Route>
+        <Route path='/ContactUs' element={<ContactUsPage />} ></Route>
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} ></Route>
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
