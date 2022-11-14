@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { firebase, auth, provider } from '../../firebase';
 // styles
 import '../../assets/styles/Common.css'
@@ -43,6 +43,39 @@ function Login() {
     });
 
 
+    const [mynumber, setnumber] = useState("");
+    const [otp, setotp] = useState('');
+    const [show, setshow] = useState(false);
+    const [final, setfinal] = useState('');
+  
+    // Sent OTP
+    const signin = () => {
+  
+        if (mynumber === "" || mynumber.length < 10) return;
+  
+        let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+        auth.signInWithPhoneNumber(mynumber, verify).then((result) => {
+            setfinal(result);
+            alert("code sent")
+            setshow(true);
+        })
+            .catch((err) => {
+                alert(err);
+                window.location.reload()
+            });
+    }
+  
+    // Validate OTP
+    const ValidateOtp = () => {
+        if (otp === null || final === null)
+            return;
+        final.confirm(otp).then((result) => {
+            // success
+        }).catch((err) => {
+            alert("Wrong code");
+        })
+    }
+
     
 
     // Validate OTP
@@ -62,27 +95,30 @@ function Login() {
                 <img src={siteLogo} alt="" className="companyLogo" />
                 <div className="LoginInnerContainer">
                     <div className="LoginForm">
+                    <div style={{ display: !show ? "block" : "none" }}>
                         <label htmlFor="phoneNumber">
                             Phone Number : <br /><br />
-                            <input type="text" placeholder='10 digit Mobile Number' id="phoneNumberLogin" />
+                            <input value={mynumber} onChange={(e) => { 
+                       setnumber(e.target.value) }} type="text" placeholder='10 digit Mobile Number' id="phoneNumberLogin" />
                         </label>
+                        <div id="recaptcha-container"></div>
                         <div className="buttonSend">
-                            <button className="sendBtn">Send OTP</button>
+                            <button onClick={signin} className="sendBtn">Send OTP</button>
                         </div>
                     </div>
+</div>
 
-
-                    <div className="OTPEntry" >
-                        <p className="otpHeading">Enter OTP</p>
+                    <div className="OTPEntry" style={{ display: show ? "block" : "none" }}>
+                        <p className="otpHeading" >Enter OTP</p>
                         <div className="OTPInputs">
 
-                            <input type="text" name="" id="" className='inputOTP' />
+                            <input  onChange={(e) => { setotp(e.target.value) }} type="text" name="" id="" className='inputOTP' />
                         </div>
                     </div>
 
 
 
-                    <button className="LoginBtn">Login</button>
+                    <button onClick={ValidateOtp} className="LoginBtn">Login</button>
                     <br />
                     <h5 className="googleaccount">Don't have an account? <a href="">Sign Up</a></h5>
                     <br />
