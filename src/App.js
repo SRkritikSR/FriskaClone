@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      {/* <Routes>
+      <Routes>
         <Route path='/' element={<LandingPage />} ></Route>
         <Route path='/home' element={<LandingPageAfterLogin />} ></Route>
         <Route element={<Error />} ></Route>
@@ -57,8 +57,9 @@ function App() {
         <Route path='/SignUp' element={<SignUp />} ></Route>
         <Route path='/ContactUsPage' element={<ContactUsPage />} ></Route>
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} ></Route>
+        <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
 
-      </Routes> */}
+      </Routes>
 
       {/* <LandingPage /> */}
       {/* <SignUp /> */}
@@ -77,7 +78,7 @@ function App() {
       {/* <WhoWeAre /> */}
       {/* <SearchDoctors /> */}
       {/* <PrivacyPolicy /> */}
-      <TermsAndConditions />
+      {/* <TermsAndConditions /> */}
 
     </>
 
