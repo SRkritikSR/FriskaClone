@@ -1,27 +1,20 @@
 import React from 'react'
 import Navabar from '../Navabar'
-import './userprofile.css'
+import './myappointment.css'
 import NavbarAfterLogin from '../NavbarAfterLogin'
-import { auth,firebase } from '../../../firebase';
+import { firebase } from '../../../firebase';
 import Footer from '../../Footer';
+import { NavLink } from 'react-router-dom';
 
-function Myprofile() {
+function Myappointment() {
 
-    const logoutt = () =>{
-        auth.signOut();
-        window.location='/'
-    }
 
     const user = firebase.auth().currentUser;
 
 // The user object has basic properties such as display name, email, etc.
 
     // const email = user.email;
-
-    // if(email===null)
-    // {
-    //     email='abc@gmail.com';
-    // }
+ 
 
     return (
     <>
@@ -44,47 +37,34 @@ function Myprofile() {
 <div className='main'>
     <div>
         <br></br>
-    <h1 className='pos'>Your Profile</h1>
+    <h1 className='pos'>No Appointment History<br>
+    </br></h1>
     <br></br>
-    
-
     <br></br>
-<ul className='pos' style={{listStyle: 'none' }}>
-    <li>    <br></br>
-    <h2>Name</h2>
-        <br></br>
-        <h3>N/A</h3>
-    </li>
-    <br></br>
-    <li>
-    <h2>Email</h2>
-    <br></br>
-    <h3>N/A</h3>
-    </li>
-    <br></br>
-    <li>
-    <h2>Phone Number</h2>
-    <br></br>
-        <h3>N/A</h3>
-    </li>
-    <br></br> <br></br>
-</ul>
-    </div>
-    <button  onClick={logoutt} className='BookingButton'>
-                Log Out
+    <button className='BookingButton'>
+                <NavLink to='/SearchDoctors'>Book an appointment</NavLink>
             </button>
+    </div>
+
             </div>
-    <br></br> <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     <br></br>
     <br></br>
     <br></br>    <br></br>
     <br></br>    <br></br>
-   
+    <br></br>    <br></br>
+    <br></br>    <br></br>
+    <br></br>    <br></br>
+    <br></br>    <br></br>
+    <br></br>    <br></br>
+    <br></br>    <br></br>
     <br></br>    <br></br>
     <br></br>
-    <Footer></Footer>
+    <Footer className='margin-top'></Footer>
     </>
   )
 }
 
-export default Myprofile;
+export default Myappointment;

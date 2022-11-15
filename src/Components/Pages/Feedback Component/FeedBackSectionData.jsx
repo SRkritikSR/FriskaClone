@@ -2,13 +2,13 @@ const FeedbackSectionData = [
     {
         name: "Harshit Yadav",
         city: "Varanasi, Uttar Pradesh",
-        para: "Highly qualified and experienced doctors,Good support services,Easy to use.I consider it as a boon in the  areas where we can't reach and would have to wait in line."
+        para: "Highly skilled and experienced doctors, good support services, and ease of use. I see it as an advantage in locations where we can't get over there and would be forced to wait in line."
 
     },
     {
-        name: "Aditya GHupta",
+        name: "Aditya Gupta",
         city: "Pune, Maharashtra",
-        para: "Very good app. Easy to use,Large number of doctors,simple technology."
+        para: "Excellent software. Simple technology, a large number of doctors, and an easy-to-use interface."
 
     },
 
@@ -17,14 +17,14 @@ const FeedbackSectionData = [
 const FeedbackSectionDataColumn2 = [
     {
         name: "Shivam Aggarwal",
-        city: "Mohali, Uttrakhand",
-        para: "It's been an overwhelming experience getting a doctor appointment and a perfect specialist is tough and friska did that for me ,thank you friska!!"
+        city: "Agra, Uttar Pradesh",
+        para: "It's been an overwhelming experience; finding a medical appointment and a proper specialist is challenging, but Friska handled it for me; thank you, Friska!!"
 
     },
     {
-        name: "Ritwik Dev Singh",
-        city: "Gandhinagar, Gujrat",
-        para: "Had a wonderful experience surfing through the site. The site layout could easily help me reach out the doctors. "
+        name: "Aditya Khandelwal",
+        city: "Gandhinagar, Gujarat",
+        para: "I had a fantastic time browsing the website. The site layout could easily assist me in contacting the doctors."
 
     },
 ]

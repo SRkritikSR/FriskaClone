@@ -1,15 +1,18 @@
 let DocNameData = [
     {
         docName: "Rajesh Tiwari",
-        docPrice: "Rs 500-1000"
+        docPrice: "Rs 500",
+        links:'https://pages.razorpay.com/pl_KgSATjr7VQWcKg/view',
     },
     {
         docName: "Manish Singh",
-        docPrice: "Rs 50-100"
+        docPrice: "Rs 500",
+        links:'https://pages.razorpay.com/pl_KgSATjr7VQWcKg/view',
     },
     {
         docName: "P N Ojha",
-        docPrice: "Rs 50-200"
+        docPrice: "Rs 200",
+        links:'https://rzp.io/l/Rgl73lbS'
     },
 ]
 export default DocNameData

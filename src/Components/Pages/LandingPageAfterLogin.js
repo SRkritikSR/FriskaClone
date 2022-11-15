@@ -48,11 +48,7 @@ function LandingPageAfterLogin() {
         <NavbarAfterLogin />
         <div className="ContainerHeroArea">
           <div className="HeroImage"><img className="HeroImageImg" src={HeroImage} alt="" />
-            <button className='BookingButton'>
-              <Link>
-                Book An Appointment
-              </Link>
-            </button>
+         
           </div>
 
         </div>
@@ -90,7 +86,7 @@ function LandingPageAfterLogin() {
         <div className="ContainerHeroArea">
           <div className="HeroImage"><img className="HeroImageImg" src={HeroImage} alt="" />
             <button className='BookingButton'>
-              <Link>
+              <Link to='/BookApoointmentsPage'>
                 Book An Appointment
               </Link>
             </button>

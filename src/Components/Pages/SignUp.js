@@ -54,7 +54,6 @@ function SignUp() {
         let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
         auth.signInWithPhoneNumber(mynumber, verify).then((result) => {
             setfinal(result);
-            alert("code sent")
             setshow(true);
         })
             .catch((err) => {
@@ -90,9 +89,7 @@ function SignUp() {
     //         alert("Wrong code");
     //     })
     // }
-    const logout = () => {
-        auth.signOut();
-    }
+
 
     return (
         <div className='SignUpOuterContainer'>
@@ -113,7 +110,8 @@ function SignUp() {
                                     setnumber(e.target.value)
                                 }} type="text" placeholder='10 digit Mobile Number' id="phoneNumberSign" />
                             </label>
-                            <div id="recaptcha-container"></div>
+                            
+                            <div className='space-top-down' id="recaptcha-container"></div>
                             <br />
                             <div className="buttonSendSignUp">
                                 <button onClick={signin} className="sendBtnSignUp">Send OTP</button>
@@ -127,13 +125,13 @@ function SignUp() {
                         <div className="OTPInputs">
                             <input onChange={(e) => { setotp(e.target.value) }} type="text" name="" id="" className='inputOTP' />
                         </div>
-                        <button onClick={ValidateOtp} className="SignUpBtn">Sign Up</button>
+                        <button onClick={ValidateOtp} className="SignUpBtn ">Sign Up</button>
                     </div>
 
 
                     <br />
 
-                    <button className="SignUpGoogleBtn" onClick={gsign} > <img src={googleLogo} alt="google" className="googleLogo" /> Sign in with Google</button>
+                    <button className="SignUpGoogleBtn space-top-down" onClick={gsign} > <img src={googleLogo} alt="google" className="googleLogo" /> Sign in with Google</button>
                     <br />
                     <h4 className="googleaccount">Already have an account? <Link to="/Login">Login</Link></h4>
                     {/* <button style={{ "marginLeft": "20px" }}

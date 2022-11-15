@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
+import {firebase} from '../../../firebase'
 import WorkingSection1 from '../../../assets/img/LandingPage/WorkingSection1.png'
 import WorkingSection2 from '../../../assets/img/LandingPage/WorkingSection2.png'
 import './workingFriska.css'
@@ -9,6 +9,14 @@ import './workingFriska.css'
 
 
 function WorkingFriskaCard(props) {
+    const user = firebase.auth().currentUser;
+    const navg = () =>{
+        if(user!==null){
+            return window.location='/medicalrecords'
+        }else{
+            return window.location='/login'
+        }
+    }
     console.log(props.contentWorkingHeading);
     return (
         <>
@@ -36,7 +44,7 @@ function WorkingFriskaCard(props) {
                         <br />
                         <h2 className="contentWorkingPara">Save your medical records here securely so that you never forget them and get amazing discounts on booking appointments.</h2>
                     </div>
-                    <button className="contentWorkingButton widthBtn"><Link to="/BookApoointmentsPage">Upload Records</Link></button>
+                    <button onClick={navg} className="contentWorkingButton widthBtn">Upload Records</button>
                 </div>
             </div>
         </>

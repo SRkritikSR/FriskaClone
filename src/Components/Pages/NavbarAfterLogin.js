@@ -32,7 +32,7 @@ const user = firebase.auth().currentUser;
     let activeClassName = "underline"
 
     const logout = () => {
-        auth.signOut();
+        return window.location = '/MyProfile' ;
 
 }
 
@@ -44,7 +44,9 @@ const user = firebase.auth().currentUser;
             <div>
                 <nav className="newNav">
                     <div className="logoImgContainer">
+                    <Link to="/">
                         <img src={siteLogo} alt="Med-D" className='logoImg' />
+                        </Link>
                     </div>
                     <div className="rightContainer">
                         <ul>
@@ -72,9 +74,9 @@ const user = firebase.auth().currentUser;
                             <div className="userAfterContent">
                                 <button className="userProfileBtn"
                                     onClick={logout}>
-                                    <img src={photoURL} alt="" className="dp" />
-                                </button>
-                                <p style={{ color: "black" }}>Hi, {displayName}</p>
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png' alt="" className="dp" />
+                                </button>&nbsp;&nbsp;&nbsp;
+                                <p style={{ color: "black",fontWeight:'bold', }}>{displayName}</p>
 
                             </div>
 

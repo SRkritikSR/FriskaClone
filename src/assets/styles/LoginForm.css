@@ -32,7 +32,10 @@
     align-items: center;
 
 }
-
+.space-top-down{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .LoginForm {
     width: 100%;
     /* border: 2px solid red; */
@@ -131,6 +134,7 @@
 }
 
 .LoginBtn {
+    margin-top: 60px;
     width: 65%;
     height: 16%;
     border: none;

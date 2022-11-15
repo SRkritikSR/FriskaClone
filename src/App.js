@@ -30,6 +30,9 @@ import PrivacyPolicy from './Components/Pages/PrivacyPolicy';
 import TermsAndConditions from './Components/Pages/TermsAndConditions';
 import WhoWeAreOld from './Components/Pages/WhoWeAreOld';
 import Myprofile from './Components/Pages/MyProfile/myprofile';
+import UploadDocu from './Components/Pages/UploadDocuments/UploadDocu';
+import Payment from './Components/Pages/Payment/payment';
+import Myappointment from './Components/Pages/MyAppointments/myappointment';
 
 // function App() {
 //   const [user] = useAuthState(auth);
@@ -57,12 +60,15 @@ function App() {
         <Route path='/MyProfile' element={<Myprofile/>}></Route>
         <Route path='/SearchDoctors' element={<SearchDoctors/>}></Route>
         <Route path='/BookApoointmentsPage' element={<BookAppointmentsPage />} ></Route>
+        <Route path='/medicalrecords' element={<UploadDocu></UploadDocu>}></Route>
+        <Route path='/appointments' element={<Myappointment></Myappointment>}></Route>
+        <Route path='/payment' element={<Payment></Payment>}></Route>
         <Route path='/Login' element={<Login />} ></Route>
         <Route path='/SignUp' element={<SignUp />} ></Route>
         <Route path='/ContactUs' element={<ContactUsPage />} ></Route>
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} ></Route>
         <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
-        <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route>
+        {/* <Route path='/TermsAndConditions' element={<TermsAndConditions />} ></Route> */}
         <Route path='/WhoWeAreOld' element={<WhoWeAreOld />} ></Route>
       </Routes>
 

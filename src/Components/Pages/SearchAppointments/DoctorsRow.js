@@ -9,7 +9,7 @@ const DoctorsRow = () => {
         <div className='DocRowOuterContainer'>
             {DoctorNameData.map((val) => {
                 return (
-                    <DoctorCard docName={val.docName} docPrice={val.docPrice} />
+                    <DoctorCard docName={val.docName} docPrice={val.docPrice} links={val.links}/>
                 )
 
             })}

@@ -20,25 +20,30 @@ function SearchDoctors() {
             <div className='outerSearchContainer'>
 
                 <div className="topPartSearch">
-                    <div className="leftSearchPart">
-                        <h1 className="searchHeading">Browse Doctors</h1>
-                        <div className="rightTopPart">
+                    {/* <div className="leftSearchPart"> */}
+                        {/* <h1 className="searchHeading">Browse Doctors</h1> */}
+                        {/* <div className="rightTopPart">
 
                             <button className="searchCity">Pune</button>
                             <button className="searchDoctor">City Diabetic Center</button>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
 
                 </div>
-                <div className="searchPart">
-                    <input type="text" placeholder='Search' className="searchDoctor" />
+                {/* <div className="searchPart">
+                  
                     <button className="filterBtn"> <ion-icon name="funnel-outline"></ion-icon> Filter </button>
-                </div>
+                </div> */}
 
                 <DoctorsRow />
 
-                <button className="loadMoreBtn">Load More</button>
+                {/* <button className="loadMoreBtn bookingBtn">Load More</button> */}
 
+           
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             </div>
             <Footer />
         </>

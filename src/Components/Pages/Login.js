@@ -42,27 +42,34 @@ function Login() {
         }
     });
 
+ 
 
     const [mynumber, setnumber] = useState("");
     const [otp, setotp] = useState('');
     const [show, setshow] = useState(false);
     const [final, setfinal] = useState('');
 
-    // Sent OTP
+
+
+
     const signin = () => {
 
+        
         if (mynumber === "" || mynumber.length < 10) return;
 
         let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
         auth.signInWithPhoneNumber(mynumber, verify).then((result) => {
             setfinal(result);
-            alert("code sent")
             setshow(true);
+
         })
             .catch((err) => {
                 alert(err);
                 window.location.reload()
             });
+
+           
+
     }
 
     // Validate OTP
@@ -70,13 +77,14 @@ function Login() {
         if (otp === null || final === null)
             return;
         final.confirm(otp).then((result) => {
+          
             // success
+        
         }).catch((err) => {
-            alert("Wrong code");
+            alert("Wrong OTP");
         })
     }
-
-
+    
 
     // Validate OTP
     // const ValidateOtp = () => {
@@ -102,10 +110,11 @@ function Login() {
                                     setnumber(e.target.value)
                                 }} type="text" placeholder='10 digit Mobile Number' id="phoneNumberLogin" />
                             </label>
-                            <div id="recaptcha-container"></div>
                             <div className="buttonSend">
                                 <button onClick={signin} className="sendBtn">Send OTP</button>
                             </div>
+                            <div className='space-top-down' id="recaptcha-container"></div>
+                            
                         </div>
                     </div>
 

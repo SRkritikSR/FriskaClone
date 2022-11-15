@@ -26,6 +26,15 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 
 function BookApoointmentsPage() {
     const [user] = useAuthState(auth);
+
+    const navg = () =>{
+        if(user!==null){
+            return window.location='/appointments'
+        }else{
+            return window.location='/login'
+        }
+    }
+
     return (
         <>
             {user ? <NavbarAfterLogin /> :
@@ -41,7 +50,7 @@ function BookApoointmentsPage() {
                                 No more standing in queues, sitting in the waiting area. Skip the hassle and get your health checked up quickly with our system
                             </p>
                         </div>
-                        <button className="heroBtn">Book An Appointment</button>
+                        <button className="heroBtn" onClick={navg}>Book An Appointment</button>
                     </div>
                 </div>
             </div>

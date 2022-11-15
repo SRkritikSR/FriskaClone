@@ -22,11 +22,16 @@ import section7 from "../../assets/images/whoWeAre/section7.png"
 import section8 from "../../assets/images/whoWeAre/section8Alt.png"
 import Navabar from './Navabar';
 import Footer from '../Footer';
+import {firebase} from '../../firebase'
+import NavbarAfterLogin from './NavbarAfterLogin';
 
 export default function whoWeAre() {
+    const user = firebase.auth().currentUser;
     return (
         <>
-            <Navabar />
+  { user ?
+        <NavbarAfterLogin></NavbarAfterLogin> : <Navabar></Navabar>
+    }
             <img className='w-100' src={section1} />
             <img className='w-100' src={section2} />
             <div className='container'>
