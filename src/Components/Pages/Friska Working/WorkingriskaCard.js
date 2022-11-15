@@ -1,25 +1,45 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 import WorkingSection1 from '../../../assets/img/LandingPage/WorkingSection1.png'
 import WorkingSection2 from '../../../assets/img/LandingPage/WorkingSection2.png'
 import './workingFriska.css'
 
+
+
 function WorkingFriskaCard(props) {
     console.log(props.contentWorkingHeading);
     return (
+        <>
 
-        <div className="workingContainer1">
-            <div className="imageWorking">
-                <img src={props.imgSrc} className="imageWorkingImg" alt="" />
-            </div>
-            <div className="contentWorking">
-                <div className="headingCard">
-                    <h1 className="contentWorkingHeading">{props.contentWorkingHeading}</h1>
-                    <br />
-                    <h2 className="contentWorkingPara">{props.contentWorkingPara} </h2>
+            <div className="workingContainer1">
+                <div className="imageWorking">
+                    <img src={WorkingSection1} className="imageWorkingImg" alt="" />
                 </div>
-                <button className="contentWorkingButton widthBtn"><a href="#">{props.btnContent} </a></button>
+                <div className="contentWorking">
+                    <div className="headingCard">
+                        <h1 className="contentWorkingHeading">Book Offline Appointments</h1>
+                        <br />
+                        <h2 className="contentWorkingPara">No more standing in queues, sitting in the waiting area.Skip the hassle and get your health checked up quickly with live tracking system. </h2>
+                    </div>
+                    <button className="contentWorkingButton widthBtn"><Link to="/BookApoointmentsPage">Book an Appointment </Link></button>
+                </div>
             </div>
-        </div>
+            <div className="workingContainer1">
+                <div className="imageWorking">
+                    <img src={WorkingSection2} className="imageWorkingImg" alt="" />
+                </div>
+                <div className="contentWorking">
+                    <div className="headingCard">
+                        <h1 className="contentWorkingHeading">Save Your Medical Records</h1>
+                        <br />
+                        <h2 className="contentWorkingPara">No more standing in queues, sitting in the waiting area.Skip the hassle and get your health checked up quickly with live tracking system.</h2>
+                    </div>
+                    <button className="contentWorkingButton widthBtn"><Link to="/BookApoointmentsPage">Upload Records</Link></button>
+                </div>
+            </div>
+        </>
 
     )
 }

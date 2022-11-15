@@ -134,6 +134,10 @@
     background: #FFFFFF;
 }
 
+.cardsOffer:hover {
+    transform: scale(1.05);
+}
+
 .cardOfferImg {
     width: 70%;
 

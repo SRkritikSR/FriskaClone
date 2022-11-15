@@ -50,7 +50,7 @@
 }
 
 .feedbacks:hover {
-    transform: scale(1.005);
+    transform: scale(1.05);
 }
 
 .upperContainer {
@@ -62,7 +62,7 @@
 
 .customerLogo {
 
-    width: 9%;
+    width: 8%;
     height: 70%;
     border-radius: 50%;
 }

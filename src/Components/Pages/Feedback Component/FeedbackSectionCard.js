@@ -1,6 +1,6 @@
 import React from 'react'
 import './Feedback.css'
-import userImg from '../../../assets/img/Feedback/userImg.jpg'
+import userImg from '../../../assets/img/Feedback/businessman.png'
 function FeedbackSectionCard(props) {
     return (
         <>

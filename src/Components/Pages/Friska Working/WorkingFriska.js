@@ -21,12 +21,8 @@ const WorkingFriska = () => {
             <br />
             <h2 className='workingFriskaHeading2'>Save time with the click button</h2>
 
-            {WorkingFriskaData.map((val) => {
-                return (
+            <WorkingFriskaCard />
 
-                    <WorkingFriskaCard imgSrc={WorkingSection2} contentWorkingHeading={val.contentWorkingHeading} contentWorkingPara={val.contentWorkingPara} btnContent={val.btnContent} />
-                )
-            })}
         </div>
     )
 }
