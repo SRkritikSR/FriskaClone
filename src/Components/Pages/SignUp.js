@@ -114,6 +114,7 @@ function SignUp() {
                                 }} type="text" placeholder='10 digit Mobile Number' id="phoneNumberSign" />
                             </label>
                             <div id="recaptcha-container"></div>
+                            <br />
                             <div className="buttonSendSignUp">
                                 <button onClick={signin} className="sendBtnSignUp">Send OTP</button>
                             </div>

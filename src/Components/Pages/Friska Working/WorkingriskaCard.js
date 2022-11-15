@@ -34,7 +34,7 @@ function WorkingFriskaCard(props) {
                     <div className="headingCard">
                         <h1 className="contentWorkingHeading">Save Your Medical Records</h1>
                         <br />
-                        <h2 className="contentWorkingPara">No more standing in queues, sitting in the waiting area.Skip the hassle and get your health checked up quickly with live tracking system.</h2>
+                        <h2 className="contentWorkingPara">Save your medical records here securely so that you never forget them and get amazing discounts on booking appointments.</h2>
                     </div>
                     <button className="contentWorkingButton widthBtn"><Link to="/BookApoointmentsPage">Upload Records</Link></button>
                 </div>

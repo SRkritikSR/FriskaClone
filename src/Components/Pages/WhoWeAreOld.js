@@ -43,7 +43,7 @@ export default function whoWeAre() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <img className='w-90' src={section6} />
+                <img className='w-90 m-bottom' src={section6} />
                 {/* <img className='w-100 contact-us' src={section8} /> */}
             </div>
 

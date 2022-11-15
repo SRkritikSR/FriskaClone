@@ -79,10 +79,16 @@
     padding-left: 4%;
 }
 
-#nameInputSign,
-#phoneNumberSign {
+#nameInputSign {
     width: 100%;
     height: 60%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#phoneNumberSign {
+    width: 100%;
+    height: 40%;
     border: 1px solid grey;
     border-radius: 10px;
 }

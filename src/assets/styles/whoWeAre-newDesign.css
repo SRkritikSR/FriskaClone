@@ -7,6 +7,10 @@
     margin-left: 20vw;
 }
 
+.m-bottom {
+    margin-bottom: 10vh;
+}
+
 .whoWeAre-theme {
     background: rgb(2, 175, 200);
 }

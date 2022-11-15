@@ -51,7 +51,7 @@ function LandingPage() {
       <div className="ContainerHeroArea">
         <div className="HeroImage"><img className="HeroImageImg" src={HeroImage} alt="" />
           <button className='BookingButton'>
-            <Link>
+            <Link to="/BookApoointmentsPage">
               Book An Appointment
             </Link>
           </button>
