@@ -11,6 +11,7 @@ import googleLogo from '../../assets/img/Login Form/Google Icon.png'
 
 
 function SignUp() {
+    
     // const [mynumber, setnumber] = useState("");
     // const [otp, setotp] = useState('');
     // const [show, setshow] = useState(false);
@@ -40,19 +41,25 @@ function SignUp() {
     //             window.location.reload()
     //         });
     // }
-
+    // To apply the default browser preference instead of explicitly setting it.
+    // firebase.auth().useDeviceLanguage(); 
     const [mynumber, setnumber] = useState("");
     const [otp, setotp] = useState('');
     const [show, setshow] = useState(false);
     const [final, setfinal] = useState('');
-
+    // window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
+    //     'size': 'invisible',
+    //     'callback': (response) => {
+    //       // reCAPTCHA solved, allow signInWithPhoneNumber.
+    //       onSignInSubmit();
+    //     }
+    //   });
     // Sent OTP
     const signin = () => {
-
         if (mynumber === "" || mynumber.length < 10) return;
-
-        let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-        auth.signInWithPhoneNumber(mynumber, verify).then((result) => {
+        let countryCode="+91"
+        const verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+        auth.signInWithPhoneNumber(countryCode+mynumber, verify).then((result) => {   
             setfinal(result);
             setshow(true);
         })
@@ -102,7 +109,7 @@ function SignUp() {
                             Your Name :  <br /><br />
                             <input type="text" placeholder='Your Name' id="nameInputSign" />
                         </label>
-                        <div style={{ display: !show ? "" : "none" }}>
+                        <div style={{ display: show ? "none" : "block" }}>
                             <label htmlFor="phoneNumber">
 
                                 Phone Number : <br /><br />
@@ -114,7 +121,7 @@ function SignUp() {
                             <div className='space-top-down' id="recaptcha-container"></div>
                             <br />
                             <div className="buttonSendSignUp">
-                                <button onClick={signin} className="sendBtnSignUp">Send OTP</button>
+                                <button onClick={signin} id="sign-in-button" className="sendBtnSignUp">Send OTP</button>
                             </div>
                         </div>
                     </div>
@@ -131,7 +138,7 @@ function SignUp() {
 
                     <br />
 
-                    <button className="SignUpGoogleBtn space-top-down" onClick={gsign} > <img src={googleLogo} alt="google" className="googleLogo" /> Sign in with Google</button>
+                    <button className="SignUpGoogleBtn space-top-down" onClick={gsign}><img src={googleLogo} alt="google" className="googleLogo" /> Sign in with Google</button>
                     <br />
                     <h4 className="googleaccount">Already have an account? <Link to="/Login">Login</Link></h4>
                     {/* <button style={{ "marginLeft": "20px" }}
