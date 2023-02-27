@@ -25,7 +25,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-import {getDatabase} from 'firebase/database'
+// import {getDatabase} from 'firebase/database'
 
 // const firebaseConfig = {
 //     // Your credentials
@@ -38,16 +38,23 @@ import {getDatabase} from 'firebase/database'
 //     appId: "1:421390674423:web:2bd1df096218059fbfa6f2",
 //     measurementId: "G-MG3R2S2SJ9"
 // };
+// const firebaseConfig = {
+//     apiKey: "AIzaSyAgUzeABwX8f3BRBDyz3WyWrt0G0z6Se60",
+//     authDomain: "friska-old.firebaseapp.com",
+//     databaseURL: "https://friska-old-default-rtdb.asia-southeast1.firebasedatabase.app",
+//     projectId: "friska-old",
+//     storageBucket: "friska-old.appspot.com",
+//     messagingSenderId: "575599162575",
+//     appId: "1:575599162575:web:9a98a22ac137f872d5f3ba"
+//   };
 const firebaseConfig = {
-    apiKey: "AIzaSyAgUzeABwX8f3BRBDyz3WyWrt0G0z6Se60",
-    authDomain: "friska-old.firebaseapp.com",
-    databaseURL: "https://friska-old-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "friska-old",
-    storageBucket: "friska-old.appspot.com",
-    messagingSenderId: "575599162575",
-    appId: "1:575599162575:web:9a98a22ac137f872d5f3ba"
-  };
-
+  apiKey: "AIzaSyCOaPnzfUdDs-2Xed83jcxgsLcMPWSqM-A",
+  authDomain: "friskaclone.firebaseapp.com",
+  projectId: "friskaclone",
+  storageBucket: "friskaclone.appspot.com",
+  messagingSenderId: "878837733155",
+  appId: "1:878837733155:web:762e7a0ea5fb8cce341e96"
+};
 firebase.initializeApp(firebaseConfig);
 var auth = firebase.auth();
 var provider = new firebase.auth.GoogleAuthProvider();
